@@ -1,0 +1,181 @@
+
+/* ==========================================================================
+   Hero Section Corporates
+   ========================================================================== */
+
+
+@media screen and (min-width: 768px) {
+    .hero-text h1 {
+        font-size: 3.5em;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+
+    .hero-text h1 span{
+        font-weight: 300;
+        color: #fff;
+    }
+
+
+}
+
+
+.hero-section {
+    background-image: linear-gradient(to left, transparent 50%, var(--yellow-color) 50%), linear-gradient(rgba(0, 56, 131, 0.7), rgba(0, 56, 131, 0.7019607843137254)), url(/img/corporates/hero.jpg);
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(0, 56, 131, 0.7), rgba(0, 56, 131, 0.7019607843137254)), url(/img/corporates/hero.jpg);
+    }
+
+    .hero-text h1 {
+        font-weight: 700;
+        position: relative;
+        font-size: 3em;
+        padding: 0 .5em;
+        text-align: center;
+        color: var(--yellow);
+        display: inherit;
+    }
+
+    .about h2{
+        font-size: 1em;
+    }
+
+}
+
+/* ==========================================================================
+   About Section Corporates
+   ========================================================================== */
+.about {
+    background: #f4f1f1;
+}
+
+.about h2 {
+    color: var(--gray-color);
+    padding-left: 0;
+    font-size: 1.8em;
+}
+
+.about .about-text p {
+    color: #575658;
+    margin: 0;
+}
+
+
+/* ==========================================================================
+   About Section Corporates
+   ========================================================================== */
+.corporate-statistics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.corporate-statistics li {
+    max-width: 280px;
+    width: 100%;
+    margin: 10px 0;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    flex: 2 50%;
+    list-style: none;
+}
+
+.corporate-statistics li p {
+    color: #5e5e5f;
+    font-weight: 600;
+}
+
+.corporate-statistics li span {
+    display: block;
+    font-weight: 900;
+    font-size: 2.7em;
+    line-height: 1.6em;
+    background-image: -webkit-linear-gradient( -128deg, rgb(255,206,7) 0%, rgb(241,159,15) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .corporate-statistics {
+        align-items: initial;
+    }
+
+    .corporate-statistics li span {
+        font-size: 2.4em;
+    }
+}
+
+/* ==========================================================================
+   Why us Section Corporates
+   ========================================================================== */
+.why-us h2{
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   Services Section Corporates
+   ========================================================================== */
+.services{
+    padding: 5em 0;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+
+.services-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 259px;
+    flex-direction: column;
+    flex: 30% 3;
+    margin: 1em;
+    box-sizing: border-box;
+    box-shadow: 0 4px 16.02px 1.98px rgba(119, 121, 120, 0.3);
+    background-color: #fff;
+}
+
+.services-list li svg{
+    width: 90px;
+    fill: var(--gradient);
+}
+
+.services-list li p{
+    text-transform: capitalize;
+    margin: 1em 0;
+}
+
+@media screen and (max-width: 768px){
+    .services-list li{
+        flex: 50% 2;
+        height: 190px;
+        padding: 1.5em;
+    }
+
+    .about .about-text .title {
+        font-size: 2.4em;
+    }
+
+
+}
