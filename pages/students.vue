@@ -818,3 +818,10 @@
     }
 
 </script>
+
+
+<style>
+    body {
+        padding-top: 10px;
+    }
+</style>

@@ -79,12 +79,14 @@
 </script>
 
 
+<style>
+  body {
+    padding-top: 0px;
+  }
+</style>
+
 <style scoped>
   @import "@/assets/css/intro.css";
-
-  body {
-    padding-top: 0px !important;
-  }
 
 </style>
 
