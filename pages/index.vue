@@ -73,7 +73,7 @@
 <script>
 
   export default{
-      
+
   }
 
 </script>
@@ -81,6 +81,11 @@
 
 <style scoped>
   @import "@/assets/css/intro.css";
+
+  body {
+    padding-top: 0px !important;
+  }
+
 </style>
 
 
