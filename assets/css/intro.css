@@ -6,7 +6,7 @@ body{
 }
 
 @font-face {
-    src: url("../fonts/Montserrat-Black.ttf");
+    src: url("/fonts/Montserrat-Black.ttf");
     font-family: 'Montserrat', sans-serif;
 }
 
