@@ -657,21 +657,27 @@
                 <div class="form-container">
                     <div class="row">
                         <div class="col-md-12">
-                            <form id="youth-form" method="post" action="#" class="youth-form" >
+
+                            <div class="changeDisplaySuccess"  v-bind:style="{display:changeDisplaySuccess}">
+                                <h1>Thankyou. We will get back to you later.</h1>
+                            </div>
+
+
+                            <form @submit.prevent="submit" v-bind:style="{display:changeDisplay}">
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <input id="name" name="name" type="text" class="form-control" placeholder="Name*">
+                                            <input v-model.trim="form.name" type="text" class="form-control" placeholder="Name*">
                                             <span class="error">This field is required</span>
                                         </div>
 
                                         <div class="col-md-4">
-                                            <input id="email" name="email" type="email" class="form-control" placeholder="Email*">
+                                            <input v-model.trim="form.email" type="email" class="form-control" placeholder="Email*">
                                             <span class="error">This field is required</span>
                                         </div>
 
                                         <div class="col-md-4">
-                                            <input id="college" name="college" type="text" class="form-control" placeholder="College*">
+                                            <input v-model.trim="form.college" type="text" class="form-control" placeholder="College*">
                                             <span class="error">This field is required</span>
                                         </div>
 
@@ -680,8 +686,20 @@
 
                                 <div class="form-group">
                                     <div class="row">
+
                                         <div class="col-md-4">
-                                            <select name="city" id="city" class="form-control">
+                                            <select v-model.trim="form.year" class="form-control">
+                                                <option value="0">Which year are you in</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                            <span class="error">This field is required</span>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <select v-model.trim="form.city" class="form-control">
                                                 <option value="select">Select City</option>
                                                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                                                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -720,62 +738,14 @@
                                             <span class="error">This field is required</span>
                                         </div>
                                         <div class="col-md-4">
-                                            <input id="phone_number" name="phone_number" type="number" class="form-control" placeholder="Phone Number*">
+                                            <input v-model.trim="form.phone_no" type="number" class="form-control" placeholder="Phone Number*">
                                             <span class="error">This field is required</span>
                                         </div>
-                                        <div class="col-md-4">
-                                            <input id="mobile_number" name="mobile_number" type="number" class="form-control" placeholder="Mobile phone you are Currently in use*">
-                                            <span class="error">This field is required</span>
 
-                                        </div>
                                     </div> <!--row ends here-->
                                 </div>  <!--form-group ends here-->
 
 
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <select name="which year" id="which_year" class="form-control">
-                                                <option value="0">Which year are you in</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                            </select>
-                                            <span class="error">This field is required</span>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <input id="course" name="course" type="text" class="form-control" placeholder="What course are you in pursuing*">
-                                            <span class="error">This field is required</span>
-
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <input id="interest" name="interest" type="text" class="form-control" placeholder="What are your area of interest?*">
-                                            <span class="error">This field is required</span>
-                                        </div>
-                                    </div> <!--row ends here-->
-                                </div>  <!--form-group ends here-->
-
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <input id="role_model" name="role_model" type="text" class="form-control" placeholder="Who is your role model in life and why?">
-                                            <span class="error">This field is required</span>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <input id="internship_type" name="internship_type" type="text" class="form-control" placeholder="What type of internship are you looking forward to?*">
-                                            <span class="error">This field is required</span>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <input id="internship_field" name="internship_field" type="text" class="form-control" placeholder="In which field are you looking forward to intern?*">
-                                            <span class="error">This field is required</span>
-                                        </div>
-                                    </div> <!--row ends here-->
-                                </div>  <!--form-group ends here-->
 
 
                                 <div class="form-group">
@@ -783,7 +753,7 @@
                                         <div class="col-md-12 text-center">
                                             <div class="checkbox">
                                                 <label>
-                                                    <input id="check" type="checkbox" value="check">  By filling this form, I permit youthbeat. in
+                                                    <input  v-model.trim="form.is_permitted_for_future_communication"  type="checkbox">  By filling this form, I permit youthbeat. in
 
                                                     to send me communication about internships in future.
                                                 </label>
@@ -795,10 +765,10 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-12 text-center">
-                                            <input id="submit_btn" type="submit" value="Send" class="btn  youth-btn">
+                                            <input  type="submit" value="Send" class="btn  youth-btn student_submit">
                                         </div>
                                     </div> <!--row ends here-->
-                                </div>  <!--form-group ends here-->
+                                </div>
                             </form>
                         </div>
                     </div> <!--row ends here-->
@@ -823,12 +793,40 @@
 
 
 
+
+
 <script>
 
     import Header from '@/components/Header'
     import Footer from '@/components/Footer'
 
     export default{
+        data(){
+          return{
+              form:{
+                  name: '',
+                  email: '',
+                  college: '',
+                  phone_no: '',
+                  city: '',
+                  year:'',
+                  is_permitted_for_future_communication: '',
+              },
+              changeDisplay:'',
+              changeDisplaySuccess:''
+          }
+        },
+        methods:{
+            async submit(){
+                await this.$axios.$post('student-register',this.form)
+                    .then((response) =>{
+                            console.log(response),
+                            this.changeDisplay = "none",
+                            this.changeDisplaySuccess = "block"
+                    })
+
+            }
+        },
         components:{
             Header,
             Footer
@@ -836,7 +834,6 @@
     }
 
 </script>
-
 
 
 

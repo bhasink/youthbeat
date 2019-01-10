@@ -1,4 +1,6 @@
 const pkg = require('./package')
+const webpack = require("webpack");
+
 
 module.exports = {
   mode: 'universal',
@@ -16,6 +18,32 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ],
+      script: [
+          {
+              src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+              type: "text/javascript"
+          },
+          {
+              src:
+                  "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
+              type: "text/javascript"
+          },
+          {
+              src:
+                  "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js",
+              type: "text/javascript"
+          },
+          {
+              src:
+                  "https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js",
+              type: "text/javascript"
+          },
+          {
+              src:
+                  "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js",
+              type: "text/javascript"
+          },
+      ],
 
   },
 
@@ -56,7 +84,9 @@ module.exports = {
   ** Axios module configuration
   */
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+
+    baseURL: "http://phplaravel-163112-711576.cloudwaysapps.com/api/"
+
   },
 
   /*
@@ -67,7 +97,7 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
     }
   }
 }

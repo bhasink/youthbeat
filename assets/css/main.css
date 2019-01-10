@@ -979,20 +979,24 @@ header{
     margin-top: 2em;
 }
 
-#youth-form input[type="submit"]{
+.student_submit{
     background-color: var(--gray-color);
     color: var(--yellow-color);
     border-radius: 40px;
     transition: var(--transition);
 }
 
-#youth-form input[type="submit"]:hover{
+.student_submit:hover{
     background-color: var(--yellow-color);
     color: var(--gray-color);
 }
 
 #youth-form .form-group{
     margin-bottom: 10px;
+}
+
+.changeDisplaySuccess{
+    display: none;
 }
 
 #youth-form input{
