@@ -689,7 +689,7 @@
 
                                         <div class="col-md-4">
                                             <select v-model.trim="form.year" class="form-control">
-                                                <option value="0">Which year are you in</option>
+                                                <option value="">Which year are you in</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -700,7 +700,7 @@
 
                                         <div class="col-md-4">
                                             <select v-model.trim="form.city" class="form-control">
-                                                <option value="select">Select City</option>
+                                                <option value="">Select City</option>
                                                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                                                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
                                                 <option value="Assam">Assam</option>
