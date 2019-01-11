@@ -421,22 +421,27 @@ Why Youthbeat Section
                 <div class="form-container">
                     <div class="row">
                         <div class="col-md-12">
-                            <form id="youth-form" method="post" action="data.php" class="youth-form" >
+
+                            <div class="changeDisplaySuccess"  v-bind:style="{display:changeDisplaySuccess}">
+                                <h1>Thankyou. We will get back to you later.</h1>
+                            </div>
+
+                            <form @submit.prevent="submit" class="youth-form" v-bind:style="{display:formShow}">
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <input id="name" name="name" type="text" class="form-control" placeholder="Name*">
-                                            <span class="error">This field is required</span>
+                                            <input v-model.trim="form.name" type="text" class="form-control" placeholder="Name*">
+                                            <span v-if="errors.name" class="error">{{errors.name[0]}}</span>
                                         </div>
 
                                         <div class="col-md-4">
-                                            <input id="email" name="email" type="email" class="form-control" placeholder="Email*">
-                                            <span class="error">This field is required</span>
+                                            <input v-model.trim="form.email" type="email" class="form-control" placeholder="Email*">
+                                            <span v-if="errors.email" class="error">{{errors.email[0]}}</span>
                                         </div>
 
                                         <div class="col-md-4">
-                                            <input id="college" name="college" type="text" class="form-control" placeholder="College*">
-                                            <span class="error">This field is required</span>
+                                            <input v-model.trim="form.company" type="text" class="form-control" placeholder="Company*">
+                                            <span v-if="errors.company" class="error">{{errors.company[0]}}</span>
                                         </div>
 
                                     </div> <!--row ends here-->
@@ -444,102 +449,21 @@ Why Youthbeat Section
 
                                 <div class="form-group">
                                     <div class="row">
+
                                         <div class="col-md-4">
-                                            <select name="city" id="city" class="form-control">
-                                                <option value="select">Select City</option>
-                                                <option value="Andhra Pradesh">Andhra Pradesh</option>
-                                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                                                <option value="Assam">Assam</option>
-                                                <option value="Bihar">Bihar</option>
-                                                <option value="Chhattisgarh">Chhattisgarh</option>
-                                                <option value="Chandigarh">Chandigarh</option>
-                                                <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
-                                                <option value="Daman and Diu">Daman and Diu</option>
-                                                <option value="Delhi">Delhi</option>
-                                                <option value="Goa">Goa</option>
-                                                <option value="Gujarat">Gujarat</option>
-                                                <option value="Haryana">Haryana</option>
-                                                <option value="Himachal Pradesh">Himachal Pradesh</option>
-                                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-                                                <option value="Jharkhand">Jharkhand</option>
-                                                <option value="Karnataka">Karnataka</option>
-                                                <option value="Kerala">Kerala</option>
-                                                <option value="Madhya Pradesh">Madhya Pradesh</option>
-                                                <option value="Maharashtra">Maharashtra</option>
-                                                <option value="Manipur">Manipur</option>
-                                                <option value="Meghalaya">Meghalaya</option>
-                                                <option value="Mizoram">Mizoram</option>
-                                                <option value="Nagaland">Nagaland</option>
-                                                <option value="Orissa">Orissa</option>
-                                                <option value="Punjab">Punjab</option>
-                                                <option value="Pondicherry">Pondicherry</option>
-                                                <option value="Rajasthan">Rajasthan</option>
-                                                <option value="Sikkim">Sikkim</option>
-                                                <option value="Tamil Nadu">Tamil Nadu</option>
-                                                <option value="Tripura">Tripura</option>
-                                                <option value="Uttar Pradesh">Uttar Pradesh</option>
-                                                <option value="Uttarakhand">Uttarakhand</option>
-                                                <option value="West Bengal">West Bengal</option>
-                                            </select>
-                                            <span class="error">This field is required</span>
+                                            <input v-model.trim="form.phone_no" type="number" class="form-control" placeholder="Phone Number*">
+                                            <span v-if="errors.phone_no" class="error">{{errors.phone_no[0]}}</span>
                                         </div>
+
                                         <div class="col-md-4">
-                                            <input id="phone_number" name="phone_number" type="number" class="form-control" placeholder="Phone Number*">
-                                            <span class="error">This field is required</span>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <input id="mobile_number" name="mobile_number" type="number" class="form-control" placeholder="Mobile phone you are Currently in use*">
-                                            <span class="error">This field is required</span>
+                                            <input v-model.trim="form.what_are_you_looking_for" type="text" class="form-control" placeholder="What are you looking for*">
+                                            <span v-if="errors.what_are_you_looking_for" class="error">{{errors.what_are_you_looking_for[0]}}</span>
 
                                         </div>
                                     </div> <!--row ends here-->
                                 </div>  <!--form-group ends here-->
 
 
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <select name="which year" id="which_year" class="form-control">
-                                                <option value="0">Which year are you in</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                            </select>
-                                            <span class="error">This field is required</span>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <input id="course" name="course" type="text" class="form-control" placeholder="What course are you in pursuing*">
-                                            <span class="error">This field is required</span>
-
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <input id="interest" name="interest" type="text" class="form-control" placeholder="What are your area of interest?*">
-                                            <span class="error">This field is required</span>
-                                        </div>
-                                    </div> <!--row ends here-->
-                                </div>  <!--form-group ends here-->
-
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <input id="role_model" name="role_model" type="text" class="form-control" placeholder="Who is your role model in life and why?">
-                                            <span class="error">This field is required</span>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <input id="internship_type" name="internship_type" type="text" class="form-control" placeholder="What type of internship are you looking forward to?*">
-                                            <span class="error">This field is required</span>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <input id="internship_field" name="internship_field" type="text" class="form-control" placeholder="In which field are you looking forward to intern?*">
-                                            <span class="error">This field is required</span>
-                                        </div>
-                                    </div> <!--row ends here-->
-                                </div>  <!--form-group ends here-->
 
 
                                 <div class="form-group">
@@ -547,7 +471,7 @@ Why Youthbeat Section
                                         <div class="col-md-12 text-center">
                                             <div class="checkbox">
                                                 <label>
-                                                    <input id="check" type="checkbox" value="check">  By filling this form, I permit youthbeat. in
+                                                    <input required="required"  v-model.trim="form.is_permitted_for_future_communication"  type="checkbox">  By filling this form, I permit youthbeat. in
 
                                                     to send me communication about internships in future.
                                                 </label>
@@ -559,7 +483,7 @@ Why Youthbeat Section
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-12 text-center">
-                                            <input id="submit_btn" type="submit" value="Send" class="btn  youth-btn">
+                                            <input id="submit_btn" type="submit" value="Send" class="btn student_submit youth-btn">
                                         </div>
                                     </div> <!--row ends here-->
                                 </div>  <!--form-group ends here-->
@@ -594,9 +518,32 @@ Why Youthbeat Section
     import Footer from '@/components/Footer'
 
     export default{
+        data(){
+            return{
+                form:{
+                    name:'',
+                    email:'',
+                    phone_no:'',
+                    company:'',
+                    what_are_you_looking_for:'',
+                    is_permitted_for_future_communication:'',
+                },
+                formShow:'',
+                changeDisplaySuccess:''
+            }
+        },
         components:{
             Header,
             Footer
+        },
+        methods:{
+            async submit(){
+                await this.$axios.$post('corporate-register',this.form)
+                    .then((response)=>{
+                        this.formShow = "none",
+                        this.changeDisplaySuccess = "block"
+                    });
+            },
         }
     }
 
