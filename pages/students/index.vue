@@ -169,25 +169,25 @@
 
                                         <li>
                                             <a href="">
-                                                <img src="img/featured-internship/kailash-satyarthi.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/featured-internship/kailash-satyarthi.png" alt="">
                                             </a>
                                         </li>
 
                                         <li>
                                             <a href="">
-                                                <img src="img/featured-internship/adda.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/featured-internship/adda.png" alt="">
                                             </a>
                                         </li>
 
                                         <li>
                                             <a href="">
-                                                <img src="img/featured-internship/panasonic.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/featured-internship/panasonic.png" alt="">
                                             </a>
                                         </li>
 
                                         <li>
                                             <a href="">
-                                                <img src="img/featured-internship/dineout.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/featured-internship/dineout.png" alt="">
                                             </a>
                                         </li>
 
@@ -224,7 +224,7 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="img/why-us.jpg" alt="">
+                        <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/why-us.jpg" alt="">
 
                     </div>
 
@@ -509,29 +509,29 @@
                                     <div class="item">
                                         <ul class="clients-list">
                                             <li>
-                                                <img src="img/clients/1.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/1.png" alt="">
                                             </li>
                                             <li>
-                                                <img src="img/clients/2.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/2.png" alt="">
                                             </li>
                                             <li>
-                                                <img src="img/clients/3.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/3.png" alt="">
                                             </li>
                                             <li>
-                                                <img src="img/clients/4.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/4.png" alt="">
                                             </li>
                                             <li>
-                                                <img src="img/clients/5.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/5.png" alt="">
                                             </li>
 
                                             <li>
-                                                <img src="img/clients/thrill-poker.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/thrill-poker.png" alt="">
                                             </li>
                                             <li>
-                                                <img src="img/clients/tea.jpg" alt=""  style="width: 75px">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/tea.jpg" alt=""  style="width: 75px">
                                             </li>
                                             <li>
-                                                <img src="img/clients/hypstar.jpg" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/hypstar.jpg" alt="">
                                             </li>
                                         </ul>
                                     </div>
@@ -550,7 +550,7 @@
                                     <div class="item">
                                         <ul class="clients-list">
                                             <li>
-                                                <img src="img/clients/1.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/1.png" alt="">
                                             </li>
                                         </ul>
                                     </div>
@@ -559,7 +559,7 @@
                                         <ul class="clients-list">
 
                                             <li>
-                                                <img src="img/clients/2.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/2.png" alt="">
                                             </li>
 
                                         </ul>
@@ -571,18 +571,7 @@
                                         <ul class="clients-list">
 
                                             <li>
-                                                <img src="img/clients/3.png" alt="">
-                                            </li>
-
-                                        </ul>
-                                    </div>
-
-
-                                    <div class="item">
-                                        <ul class="clients-list">
-
-                                            <li>
-                                                <img src="img/clients/4.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/3.png" alt="">
                                             </li>
 
                                         </ul>
@@ -593,7 +582,18 @@
                                         <ul class="clients-list">
 
                                             <li>
-                                                <img src="img/clients/5.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/4.png" alt="">
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="item">
+                                        <ul class="clients-list">
+
+                                            <li>
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/5.png" alt="">
                                             </li>
 
 
@@ -604,7 +604,7 @@
                                         <ul class="clients-list">
 
                                             <li>
-                                                <img src="img/clients/thrill-poker.png" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/thrill-poker.png" alt="">
                                             </li>
 
                                         </ul>
@@ -613,7 +613,7 @@
                                     <div class="item">
                                         <ul class="clients-list">
                                             <li>
-                                                <img src="img/clients/tea.jpg" alt=""  style="width: 75px">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/tea.jpg" alt=""  style="width: 75px">
                                             </li>
                                         </ul>
                                     </div>
@@ -621,7 +621,7 @@
                                     <div class="item">
                                         <ul class="clients-list">
                                             <li>
-                                                <img src="img/clients/hypstar.jpg" alt="">
+                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/hypstar.jpg" alt="">
                                             </li>
                                         </ul>
                                     </div>

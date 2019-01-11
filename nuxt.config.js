@@ -97,6 +97,8 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+      publicPath: 'https://youthbeat.sgp1.cdn.digitaloceanspaces.com',
+
     extend(config, ctx) {
 
     }
