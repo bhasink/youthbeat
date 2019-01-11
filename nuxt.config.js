@@ -64,6 +64,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+      'plugins/axios.js','plugins/mixins/validation.js',
       {src: 'plugins/owl.js', ssr: false}
 
   ],

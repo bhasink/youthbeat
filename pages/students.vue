@@ -668,17 +668,17 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <input v-model.trim="form.name" type="text" class="form-control" placeholder="Name*">
-                                            <span class="error">This field is required</span>
+                                            <span v-if="errors.name" class="error">{{errors.name[0]}}</span>
                                         </div>
 
                                         <div class="col-md-4">
                                             <input v-model.trim="form.email" type="email" class="form-control" placeholder="Email*">
-                                            <span class="error">This field is required</span>
+                                            <span v-if="errors.email" class="error">{{errors.email[0]}}</span>
                                         </div>
 
                                         <div class="col-md-4">
                                             <input v-model.trim="form.college" type="text" class="form-control" placeholder="College*">
-                                            <span class="error">This field is required</span>
+                                            <span v-if="errors.college" class="error">{{errors.college[0]}}</span>
                                         </div>
 
                                     </div> <!--row ends here-->
@@ -695,7 +695,7 @@
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                             </select>
-                                            <span class="error">This field is required</span>
+                                            <span v-if="errors.year" class="error">{{errors.year[0]}}</span>
                                         </div>
 
                                         <div class="col-md-4">
@@ -735,11 +735,11 @@
                                                 <option value="Uttarakhand">Uttarakhand</option>
                                                 <option value="West Bengal">West Bengal</option>
                                             </select>
-                                            <span class="error">This field is required</span>
+                                            <span v-if="errors.city" class="error">{{errors.city[0]}}</span>
                                         </div>
                                         <div class="col-md-4">
                                             <input v-model.trim="form.phone_no" type="number" class="form-control" placeholder="Phone Number*">
-                                            <span class="error">This field is required</span>
+                                            <span v-if="errors.phone_no" class="error">{{errors.phone_no[0]}}</span>
                                         </div>
 
                                     </div> <!--row ends here-->
@@ -753,11 +753,13 @@
                                         <div class="col-md-12 text-center">
                                             <div class="checkbox">
                                                 <label>
-                                                    <input  v-model.trim="form.is_permitted_for_future_communication"  type="checkbox">  By filling this form, I permit youthbeat. in
+                                                    <input required="required"  v-model.trim="form.is_permitted_for_future_communication"  type="checkbox">  By filling this form, I permit youthbeat. in
 
                                                     to send me communication about internships in future.
                                                 </label>
+
                                             </div>
+
                                         </div>
                                     </div> <!--row ends here-->
                                 </div>  <!--form-group ends here-->
