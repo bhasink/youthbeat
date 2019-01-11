@@ -119,6 +119,7 @@ header{
     flex-direction: column;
     position: absolute;
     top: 0;
+    transition: all .3s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 
 .mega-menu{
@@ -979,24 +980,20 @@ header{
     margin-top: 2em;
 }
 
-.student_submit{
+#youth-form input[type="submit"]{
     background-color: var(--gray-color);
     color: var(--yellow-color);
     border-radius: 40px;
     transition: var(--transition);
 }
 
-.student_submit:hover{
+#youth-form input[type="submit"]:hover{
     background-color: var(--yellow-color);
     color: var(--gray-color);
 }
 
 #youth-form .form-group{
     margin-bottom: 10px;
-}
-
-.changeDisplaySuccess{
-    display: none;
 }
 
 #youth-form input{
@@ -1012,7 +1009,7 @@ header{
     border-radius: 0;
     background-color: #f6f6f6;
     border: none;
-    height: 50px;
+    height: 45px;
     margin: 8px 0;
 }
 
@@ -1059,13 +1056,22 @@ select:invalid{
     border-bottom: 5px solid #ff0018;
 }
 
-/*form:valid{*/
-    /*border-bottom: 5px solid #00ff6a;*/
-/*}*/
+.student_submit {
+    background-color: #414042;
+    background-color: var(--gray-color);
+    color: #fbd54a;
+    color: var(--yellow-color);
+    border-radius: 40px;
+    transition: all .4s ease-in-out;
+    transition: var(--transition);
+}
 
-/*form:invalid{*/
-    /*border-bottom: 5px solid #ff0018;*/
-/*}*/
+.student_submit:hover {
+    background-color: #fbd54a;
+    background-color: var(--yellow-color);
+    color: #414042;
+    color: var(--gray-color);
+}
 
 /* ==========================================================================
    Footer Section

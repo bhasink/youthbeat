@@ -75,119 +75,119 @@
 /* TEMPLATE BACKGROUNDS */
 /* ken burns slideshow IMG BACKGROUND */
 .kenburns-slide-1 {
-background-image: url(../img/background/kenburns-bg-1.jpg);
+background-image: url(/img/background/kenburns-bg-1.jpg);
 }
 
 .kenburns-slide-2 {
-background-image: url(../img/background/kenburns-bg-2.jpg);
+background-image: url(/img/background/kenburns-bg-2.jpg);
 }
 
 .kenburns-slide-3 {
-background-image: url(../img/background/kenburns-bg-3.jpg);
+background-image: url(/img/background/kenburns-bg-3.jpg);
 }
 
 .kenburns-slide-4 {
-background-image: url(../img/background/kenburns-bg-4.jpg);
+background-image: url(/img/background/kenburns-bg-4.jpg);
 }
 
 
 /* home carousel slider IMG BACKGROUND */
 .home-page-img-item-1 {		
-background-image: url(../img/background/home-page-img-item-1.jpg);
+background-image: url(/img/background/home-page-img-item-1.jpg);
 }
 
 .home-page-img-item-2 {		
-background-image: url(../img/background/home-page-img-item-2.jpg);
+background-image: url(/img/background/home-page-img-item-2.jpg);
 }
 
 .home-page-img-item-3 {	
-background-image: url(../img/background/home-page-img-item-3.jpg);
+background-image: url(/img/background/home-page-img-item-3.jpg);
 }
 
 .home-page-img-item-4 {		
-background-image: url(../img/background/home-page-img-item-4.jpg);
+background-image: url(/img/background/home-page-img-item-4.jpg);
 }
 
 .home-page-img-item-5 {		
-background-image: url(../img/background/home-page-img-item-5.jpg);
+background-image: url(/img/background/home-page-img-item-5.jpg);
 }
 
 .home-page-img-item-6 {		
-background-image: url(../img/background/home-page-img-item-6.jpg);
+background-image: url(/img/background/home-page-img-item-6.jpg);
 }
 
 .home-page-img-item-7 {		
-background-image: url(../img/background/home-page-img-item-7.jpg);
+background-image: url(/img/background/home-page-img-item-7.jpg);
 }
 
 
 /* thumbnail slider IMG BACKGROUND */
 .thumbnail-slider-bg-1 {
-background-image: url(../img/background/thumbnail-slider-bg-1.jpg);
+background-image: url(/img/background/thumbnail-slider-bg-1.jpg);
 }
 
 .thumbnail-slider-bg-2 {
-background-image: url(../img/background/thumbnail-slider-bg-2.jpg);
+background-image: url(/img/background/thumbnail-slider-bg-2.jpg);
 }
 
 .thumbnail-slider-bg-3 {
-background-image: url(../img/background/thumbnail-slider-bg-3.jpg);
+background-image: url(/img/background/thumbnail-slider-bg-3.jpg);
 }
 
 .thumbnail-slider-bg-4 {
-background-image: url(../img/background/thumbnail-slider-bg-4.jpg);
+background-image: url(/img/background/thumbnail-slider-bg-4.jpg);
 }
 
 .thumbnail-slider-bg-5 {
-background-image: url(../img/background/thumbnail-slider-bg-5.jpg);
+background-image: url(/img/background/thumbnail-slider-bg-5.jpg);
 }
 
 .thumbnail-slider-bg-6 {
-background-image: url(../img/background/thumbnail-slider-bg-6.jpg);
+background-image: url(/img/background/thumbnail-slider-bg-6.jpg);
 }
 
 .thumbnail-slider-bg-7 {
-background-image: url(../img/background/thumbnail-slider-bg-7.jpg);
+background-image: url(/img/background/thumbnail-slider-bg-7.jpg);
 }
 
 .thumbnail-slider-bg-8 {
-background-image: url(../img/background/thumbnail-slider-bg-8.jpg);
+background-image: url(/img/background/thumbnail-slider-bg-8.jpg);
 }
 
 
 /* hero content slider IMG BACKGROUND */
 .bg-img-1 {
-background-image: url(../img/background/hero-bg-1.jpg);
+background-image: url(/img/background/hero-bg-1.jpg);
 }
 
 .bg-img-2 {
-background-image: url(../img/background/hero-bg-2.jpg);
+background-image: url(/img/background/hero-bg-2.jpg);
 }
 
 .bg-img-3 {
-background-image: url(../img/background/hero-bg-3.jpg);
+background-image: url(/img/background/hero-bg-3.jpg);
 }
 
 .bg-img-4 {
-background-image: url(../img/background/hero-bg-4.jpg);
+background-image: url(/img/background/hero-bg-4.jpg);
 }
 
 
 /* hero split slider IMG BACKGROUND */
 .bg-split-img-1 {
-background-image: url(../img/background/hero-split-bg-1.jpg);
+background-image: url(/img/background/hero-split-bg-1.jpg);
 }
 
 .bg-split-img-2 {
-background-image: url(../img/background/hero-split-bg-2.jpg);
+background-image: url(/img/background/hero-split-bg-2.jpg);
 }
 
 .bg-split-img-3 {
-background-image: url(../img/background/hero-split-bg-3.jpg);
+background-image: url(/img/background/hero-split-bg-3.jpg);
 }
 
 .bg-split-img-4 {
-background-image: url(../img/background/hero-split-bg-4.jpg);
+background-image: url(/img/background/hero-split-bg-4.jpg);
 }
 
 
@@ -403,7 +403,7 @@ z-index: 200;
 
 .logo-img:before {
 content: "";
-background: url(../img/logo-dark-mobile.png) no-repeat;
+background: url(/img/logo-dark-mobile.png) no-repeat;
 display: block;
 width: 100px;
 height:100px;
@@ -417,7 +417,7 @@ line-height: 34px;
 
 .logo-img-dark:before {
 content: "";
-background: url(../img/logo-light-mobile.png) no-repeat;
+background: url(/img/logo-light-mobile.png) no-repeat;
 display: block;
 width: 57px;
 height: 34px;
@@ -430,11 +430,11 @@ line-height: 34px;
 }
 
 .logo-light .logo-img:before {
-background: url(../img/logo-light-mobile.png) no-repeat;
+background: url(/img/logo-light-mobile.png) no-repeat;
 }
 
 .logo-dark .logo-img-dark:before {
-background: url(../img/logo-dark-mobile.png) no-repeat;
+background: url(/img/logo-dark-mobile.png) no-repeat;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -3347,7 +3347,7 @@ width: 100px;
 height: 100px;
 margin: 137px auto 30px auto;
 cursor: pointer;
-background: url(../img/logo-dark-mobile.png) no-repeat;
+background: url(/img/logo-dark-mobile.png) no-repeat;
 }
 
 @media only screen and (max-width: 880px) {
@@ -3362,7 +3362,7 @@ display: block;
 width: 57px;
 height: 34px;
 line-height: 34px;
-background: #fff url(../img/logo-dark-mobile.png) no-repeat;
+background: #fff url(/img/logo-dark-mobile.png) no-repeat;
 }
 
 
@@ -3911,7 +3911,7 @@ background: none;
   .YT-bg {
     position: relative;
     height: 100%;
-    background-image: url(../img/background/YT-bg.jpg);
+    background-image: url(/img/background/YT-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -4003,7 +4003,7 @@ background: none;
   .vimeo-bg {
     position: relative;
     height: 100%;
-    background-image: url(../img/background/vimeo-bg.jpg);
+    background-image: url(/img/background/vimeo-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -5159,7 +5159,7 @@ height: auto;
 
 .preloader {
 display: block;
-background: url(../img/img-flow/loading.gif) center center no-repeat ;
+background: url(/img/img-flow/loading.gif) center center no-repeat ;
 }
 
 h1.flow-container-head {

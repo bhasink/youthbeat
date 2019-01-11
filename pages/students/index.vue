@@ -196,7 +196,9 @@
 
                                 <div class="col-md-4">
                                     <div class="view-container">
-                                        <a href="">View All</a>
+                                        <nuxt-link to="/students/internships">View All
+                                        </nuxt-link>
+
                                     </div>
                                 </div>
                             </div>
@@ -804,25 +806,25 @@
 
     export default{
         data(){
-          return{
-              form:{
-                  name: '',
-                  email: '',
-                  college: '',
-                  phone_no: '',
-                  city: '',
-                  year:'',
-                  is_permitted_for_future_communication: '',
-              },
-              changeDisplay:'',
-              changeDisplaySuccess:''
-          }
+            return{
+                form:{
+                    name: '',
+                    email: '',
+                    college: '',
+                    phone_no: '',
+                    city: '',
+                    year:'',
+                    is_permitted_for_future_communication: '',
+                },
+                changeDisplay:'',
+                changeDisplaySuccess:''
+            }
         },
         methods:{
             async submit(){
                 await this.$axios.$post('student-register',this.form)
                     .then((response) =>{
-                            console.log(response),
+                        console.log(response),
                             this.changeDisplay = "none",
                             this.changeDisplaySuccess = "block"
                     })

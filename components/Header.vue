@@ -9,9 +9,9 @@
         <nav class="navbar navbar-expand-lg  main-nav " id="main-nav">
             <div class="container">
             <span>
-                <a href="" class="logo-wrapper">
-                    <img src="img/logo.png"  class="logo" alt="">
-                </a>
+                <nuxt-link to="/" class="logo-wrapper">
+                    <img src="/img/logo.png"  class="logo" alt="">
+                </nuxt-link>
             </span>
 
                 <button class="navbar-toggler menu-icon menu-toggle" type="button" >
