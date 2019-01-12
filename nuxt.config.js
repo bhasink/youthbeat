@@ -60,6 +60,10 @@ module.exports = {
 
   ],
 
+    router:{
+      middleware:["clearValidationErrors"]
+    },
+
   /*
   ** Plugins to load before mounting the App
   */
