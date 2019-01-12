@@ -103,7 +103,7 @@ Why Youthbeat Section
 
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/why-us.jpg" alt="">
+                        <img src="~/assets/img/why-us.jpg" alt="">
 
                     </div>
 
@@ -273,29 +273,29 @@ Why Youthbeat Section
                                     <div class="item">
                                         <ul class="clients-list">
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/1.png" alt="">
+                                                <img src="~/assets/img/clients/1.png" alt="">
                                             </li>
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/2.png" alt="">
+                                                <img src="~/assets/img/clients/2.png" alt="">
                                             </li>
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/3.png" alt="">
+                                                <img src="~/assets/img/clients/3.png" alt="">
                                             </li>
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/4.png" alt="">
+                                                <img src="~/assets/img/clients/4.png" alt="">
                                             </li>
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/5.png" alt="">
+                                                <img src="~/assets/img/clients/5.png" alt="">
                                             </li>
 
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/thrill-poker.png" alt="">
+                                                <img src="~/assets/img/clients/thrill-poker.png" alt="">
                                             </li>
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/tea.jpg" alt=""  style="width: 75px">
+                                                <img src="~/assets/img/clients/tea.jpg" alt=""  style="width: 75px">
                                             </li>
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/hypstar.jpg" alt="">
+                                                <img src="~/assets/img/clients/hypstar.jpg" alt="">
                                             </li>
                                         </ul>
                                     </div>
@@ -314,7 +314,7 @@ Why Youthbeat Section
                                     <div class="item">
                                         <ul class="clients-list">
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/1.png" alt="">
+                                                <img src="~/assets/img/clients/1.png" alt="">
                                             </li>
                                         </ul>
                                     </div>
@@ -323,7 +323,7 @@ Why Youthbeat Section
                                         <ul class="clients-list">
 
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/2.png" alt="">
+                                                <img src="~/assets/img/clients/2.png" alt="">
                                             </li>
 
                                         </ul>
@@ -335,18 +335,7 @@ Why Youthbeat Section
                                         <ul class="clients-list">
 
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/3.png" alt="">
-                                            </li>
-
-                                        </ul>
-                                    </div>
-
-
-                                    <div class="item">
-                                        <ul class="clients-list">
-
-                                            <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/4.png" alt="">
+                                                <img src="~/assets/img/clients/3.png" alt="">
                                             </li>
 
                                         </ul>
@@ -357,7 +346,18 @@ Why Youthbeat Section
                                         <ul class="clients-list">
 
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/5.png" alt="">
+                                                <img src="~/assets/img/clients/4.png" alt="">
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="item">
+                                        <ul class="clients-list">
+
+                                            <li>
+                                                <img src="~/assets/img/clients/5.png" alt="">
                                             </li>
 
 
@@ -368,7 +368,7 @@ Why Youthbeat Section
                                         <ul class="clients-list">
 
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/thrill-poker.png" alt="">
+                                                <img src="~/assets/img/clients/thrill-poker.png" alt="">
                                             </li>
 
                                         </ul>
@@ -377,7 +377,7 @@ Why Youthbeat Section
                                     <div class="item">
                                         <ul class="clients-list">
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/tea.jpg" alt=""  style="width: 75px">
+                                                <img src="~/assets/img/clients/tea.jpg" alt=""  style="width: 75px">
                                             </li>
                                         </ul>
                                     </div>
@@ -385,7 +385,7 @@ Why Youthbeat Section
                                     <div class="item">
                                         <ul class="clients-list">
                                             <li>
-                                                <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/clients/hypstar.jpg" alt="">
+                                                <img src="~/assets/img/clients/hypstar.jpg" alt="">
                                             </li>
                                         </ul>
                                     </div>

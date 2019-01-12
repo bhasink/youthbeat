@@ -69,7 +69,8 @@ module.exports = {
   */
   plugins: [
       'plugins/axios.js','plugins/mixins/validation.js',
-      {src: 'plugins/owl.js', ssr: false}
+      {src: 'plugins/owl.js', ssr: false},
+      // { src: 'plugins/vue-lazyload.js', ssr: false }
 
   ],
 
@@ -80,6 +81,13 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
       '@nuxtjs/axios',
       '@nuxtjs/dotenv',
+      [
+          "nuxt-imagemin",
+          {
+              optipng: { optimizationLevel: 5 },
+              gifsicle: { optimizationLevel: 2 }
+          }
+      ],
       // '@nuxtjs/pwa'
 
 

@@ -26,6 +26,8 @@
   "devDependencies": {
     "eslint": "^5.12.0",
     "eslint-loader": "^2.1.1",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "nuxt-imagemin": "^1.0.0",
+    "vue-lazyload": "^1.2.6"
   }
 }

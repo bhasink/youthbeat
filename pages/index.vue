@@ -11,7 +11,7 @@
           <div class="col-md-12">
                     <span>
                         <a href="" class="logo-wrapper">
-                            <img src="https://youthbeat.sgp1.cdn.digitaloceanspaces.com/img/logo.png"  class="logo" alt="">
+                            <img src="~/assets/img/logo.png"  class="logo" alt="">
                         </a>
                     </span>
           </div>
