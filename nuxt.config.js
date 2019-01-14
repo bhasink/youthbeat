@@ -68,7 +68,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-      'plugins/axios.js','plugins/mixins/validation.js',
+      'plugins/axios.js','plugins/mixins/validation.js','plugins/vue-moment.js',
       {src: 'plugins/owl.js', ssr: false},
       // { src: 'plugins/vue-lazyload.js', ssr: false }
 
