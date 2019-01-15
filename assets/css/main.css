@@ -1337,3 +1337,9 @@ footer a:hover{
 .carousel-indicators {
     bottom: -10px;
 }
+
+.pagination-div{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}

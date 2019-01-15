@@ -1,5 +1,5 @@
 const pkg = require('./package')
-const webpack = require("webpack");
+import webpack from 'webpack'
 
 
 module.exports = {
@@ -110,6 +110,13 @@ module.exports = {
     ** You can extend webpack config here
     */
       // publicPath: 'https://youthbeat.sgp1.cdn.digitaloceanspaces.com',
+
+      plugins:[
+        new webpack.ProvidePlugin({
+            '$':'jquery',
+            '_':'lodash'
+        })
+      ],
 
     extend(config, ctx) {
 

@@ -30,7 +30,7 @@
                                 <div class="row spacing-block">
                                     <div class="col-md-2">
                                         <div class="internship-logo-container">
-                                            <img src="img/tinder-logo.svg" alt="">
+                                            <img src="~/assets/img/internship/logo/tinder-logo.svg" alt="">
                                         </div>
                                     </div>
 
@@ -322,6 +322,17 @@
     import Footer from '@/components/Footer'
 
     export default{
+        data(){
+          return{
+              projectDetails:''
+          }
+        },
+        async asyncData({$axios}){
+          let  {data} = await $axios.get('/internship')
+            return{
+                projectDetails:data
+            }
+        },
         components:{
             Header,
             Footer
