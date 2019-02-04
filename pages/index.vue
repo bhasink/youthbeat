@@ -5,18 +5,19 @@
 
   <header>
 
-    <nav class="" id="main-nav">
+    <nav class="navbar navbar-expand-lg  " id="main-nav">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-                    <span>
-                        <a href="" class="logo-wrapper">
-                            <img src="~/assets/img/logo.png"  class="logo" alt="">
-                        </a>
-                    </span>
+        <!--<div class="row">-->
+          <!--<div class="col-md-12">-->
+            <span>
+              <a href="" class="logo-wrapper">
+                <img src="~/assets/img/logo.png"  class="logo" alt="">
+              </a>
+            </span>
+
           </div>
-        </div>
-      </div>
+        <!--</div>-->
+      <!--</div>-->
     </nav>
 
 
@@ -72,9 +73,9 @@
 
 <script>
 
-  export default{
+    export default{
 
-  }
+    }
 
 </script>
 

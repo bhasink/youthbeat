@@ -1,6 +1,7 @@
 
 .city-page{
     background-color: #f4f1f1;
+    flex: 1;
 }
 
 .city-banner{
@@ -53,6 +54,14 @@
 .internship-card span{
     font-size: .9em;
     /*color: #777777;*/
+}
+
+.internship-display .dropdown-toggle::after{
+    display: none;
+}
+
+.internship-share{
+    cursor: pointer;
 }
 
 .internship-card .internship-points{
