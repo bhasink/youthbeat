@@ -1,6 +1,6 @@
 # Youth Beat
 
-> YouthBeat is a brand of Sociowash, 
+> YouthBeat is a brand of Sociowash.
 
 ## Build Setup
 
