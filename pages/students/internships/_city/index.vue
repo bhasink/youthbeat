@@ -11,7 +11,7 @@
             ---------------------------------------------------------------->
             <section class="city-banner">
                 <div class="city-txt">
-                    <h1> All Internships</h1>
+                    <h1 class="citytxt"> {{city[0].city_name}} Internships</h1>
                 </div>
             </section>
 
@@ -22,7 +22,7 @@
 
             <section class="internship-display">
                 <div class="container">
-                    <div class="row" v-if="internships.length != 0">
+                    <div class="row">
 
 
                         <!--Include Internship Card-->
@@ -30,13 +30,13 @@
                         <!--<internship v-for="(internship,index) in internships" :key="index" :internship="internship"></internship>-->
 
 
-                        <div class="col-md-6 col-12"  v-for="(internship,index) in internships" :key="index">
+                        <div class="col-md-6 col-12" v-for="(internship,index) in internships" :key="index">
 
                             <div class="internship-card">
                                 <div class="row spacing-block">
                                     <div class="col-md-3">
                                         <div class="internship-logo-container">
-                                            <img :src="'https://phplaravel-163112-711576.cloudwaysapps.com/internship/images/'+internship.internship_logo"  alt="">
+                                            <img v-bind:src="'https://phplaravel-163112-711576.cloudwaysapps.com/internship/images/'+internship.internship_logo"  alt="">
 
                                         </div>
                                     </div>
@@ -110,7 +110,7 @@
 
                                         <!--{{internship}}-->
 
-                                        <nuxt-link class="apply-btn" :to="{name:'students-internships-id',params:{city:internship.city_id,slug:internship.slug,id:internship.id}}">
+                                        <nuxt-link class="apply-btn" :to="{name:'students-internships-id',params:{slug:internship.slug,city:internship.city_id,id:internship.id}}">
                                             apply Now
                                         </nuxt-link>
 
@@ -124,9 +124,11 @@
 
                     </div>
 
-                    <div v-if="internships.length == 0">
+
+                     <div v-if="internships.length == 0">
                           No Internship Found
                     </div>
+
 
 
                 </div>
@@ -166,7 +168,8 @@
         data(){
             return{
                 internships:[],
-                meta:{}
+                meta:{},
+                city:{},
             }
         },
         async asyncData({$axios,route,redirect,query}){
@@ -178,11 +181,21 @@
                page = 1;
            }
 
-          let {data,meta} = await $axios.$get('/api/get-internship-data?page='+page)
+           let city_check = await $axios.$get('/api/get-city-by-name/'+city_name)
 
-            return {
-                  internships:data,
-                  meta:meta
+            if(city_check.length === 0){
+              return redirect('/404')
+            }
+            else{
+
+                let {data,meta} = await $axios.$get('/api/get-internship-by-city/'+city_check[0].id+'?page='+page)
+
+                return {
+                    internships:data,
+                    meta:meta,
+                    city:city_check
+                }
+
             }
 
         },
@@ -200,14 +213,14 @@
         methods:{
             switchPage(page){
                 this.$router.replace({
-                    name: "students-internships",
+                    name: "students-internships-city",
                     query:{
                         page
                     }
                 })
             },
             async loadMore(page = this.$route.query.page){
-                let {meta,data} = await this.$axios.$get('/api/get-internship-data',{
+                let {meta,data} = await this.$axios.$get('/api/get-internship-by-city/1',{
                     params:{
                         page: page
                     }

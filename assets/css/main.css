@@ -1343,3 +1343,18 @@ footer a:hover{
     display: flex;
     justify-content: flex-end;
 }
+
+.page-item.active .page-link {
+  border-color: #e2be00;
+  background-color: #e2be00;
+}
+
+.page-link {
+  color: #000000;
+}
+.page-link:hover {
+  color: #444;
+}
+.head-margin{
+  margin-top:40px;
+}

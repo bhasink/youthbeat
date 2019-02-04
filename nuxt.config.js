@@ -61,7 +61,14 @@ module.exports = {
   ],
 
     router:{
-      middleware:["clearValidationErrors"]
+      middleware:["clearValidationErrors"],
+      extendRoutes (routes, resolve) {
+        routes.push({
+          name: 'custom',
+          path: '*',
+          component: resolve(__dirname, 'pages/404.vue')
+        })
+      }
     },
 
   /*
@@ -70,7 +77,7 @@ module.exports = {
   plugins: [
       'plugins/axios.js','plugins/mixins/validation.js','plugins/vue-moment.js',
       {src: 'plugins/owl.js', ssr: false},
-      // { src: 'plugins/vue-lazyload.js', ssr: false }
+      { src: 'plugins/social-sharing.js', ssr: false }
 
   ],
 
@@ -79,6 +86,8 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
+      '@nuxtjs/onesignal',
+      '@nuxtjs/pwa',
       '@nuxtjs/axios',
       '@nuxtjs/dotenv',
       [
@@ -88,18 +97,37 @@ module.exports = {
               gifsicle: { optimizationLevel: 2 }
           }
       ],
-      // '@nuxtjs/pwa'
-
-
-
   ],
+
+    // Options
+    oneSignal: {
+      cdn: true,
+		  OneSignalSDK: 'https://cdn.onesignal.com/sdks/OneSignalSDK.js',
+      init: {
+        appId: 'c06f0427-6293-4f16-b5f3-d4a3c15ad201',
+        allowLocalhostAsSecureOrigin: true,
+        welcomeNotification: {
+            disable: true
+        }
+      }
+  },
+
   /*
   ** Axios module configuration
   */
   axios: {
 
-    baseURL: "http://phplaravel-163112-711576.cloudwaysapps.com/api/"
+    baseURL: "https://phplaravel-163112-711576.cloudwaysapps.com",
+      credentials : false,
+      proxy: false,
+      debug: true,
+      retry: {
+          retries: 3
+      },
 
+    //   baseURL: "https://phplaravel-163112-681199.cloudwaysapps.com/api"
+    //   proxyHeaders:false,
+    // credentials:false,
   },
 
   /*

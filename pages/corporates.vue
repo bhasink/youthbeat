@@ -167,7 +167,7 @@ Why Youthbeat Section
                             </li>
 
                             <li>
-                                <a href="">Register</a>
+                                <a href="#signup">Register</a>
                             </li>
 
                         </ul>
@@ -435,7 +435,7 @@ Why Youthbeat Section
                                         </div>
 
                                         <div class="col-md-4">
-                                            <input v-model.trim="form.email" type="email" class="form-control" placeholder="Email*">
+                                            <input v-model.trim="form.email" type="text" class="form-control" placeholder="Email*">
                                             <span v-if="errors.email" class="error">{{errors.email[0]}}</span>
                                         </div>
 
@@ -538,7 +538,7 @@ Why Youthbeat Section
         },
         methods:{
             async submit(){
-                await this.$axios.$post('corporate-register',this.form)
+                await this.$axios.$post('/api/corporate-register',this.form)
                     .then((response)=>{
                         this.formShow = "none",
                         this.changeDisplaySuccess = "block"

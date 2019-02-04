@@ -77,6 +77,8 @@
 
                     <div class="col-6 text-right">
 
+                        <!--{{internship}}-->
+
                         <nuxt-link class="apply-btn" :to="{name:'students-internships-id',params:{id:internship.id}}">
                             apply Now
                         </nuxt-link>
