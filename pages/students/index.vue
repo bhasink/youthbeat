@@ -613,7 +613,7 @@
         ---------------------------------------------------------------->
 
         <section class="signup " id="signup">
-            <div class="container">
+            <div class="container" v-bind:style="{display:changeDisplay}">
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h2 class="title">
@@ -629,12 +629,7 @@
                     <div class="row">
                         <div class="col-md-12">
 
-                            <div class="changeDisplaySuccess"  v-bind:style="{display:changeDisplaySuccess}">
-                                <h1>Thankyou. We will get back to you later.</h1>
-                            </div>
-
-
-                            <form @submit.prevent="submit" v-bind:style="{display:changeDisplay}">
+                            <form @submit.prevent="submit">
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-4">
@@ -748,6 +743,10 @@
                 </div>
 
             </div> <!--container ends here-->
+
+              <div class="changeDisplaySuccess"  v-bind:style="{display:changeDisplaySuccess}">
+                  <h1>Thankyou. We will get back to you later.</h1>
+              </div>
         </section>
 
         <Footer/>

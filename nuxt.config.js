@@ -56,7 +56,7 @@ module.exports = {
   ** Global CSS
   */
 
-    css: ["@/assets/css/animate.css","@/assets/css/owl.theme.default.min.css","@/assets/css/bootstrap.min.css", "@/assets/css/bootstrap-theme.min.css", "@/assets/css/animate.css", "@/assets/css/main.css",
+    css: ["@/assets/css/animate.css","@/assets/css/owl.theme.default.min.css","@/assets/css/bootstrap.min.css", "@/assets/css/bootstrap-theme.min.css", "@/assets/css/animate.css","@/assets/css/font-awesome.css","@/assets/css/main.css",
 
   ],
 
@@ -104,10 +104,11 @@ module.exports = {
       cdn: true,
 		  OneSignalSDK: 'https://cdn.onesignal.com/sdks/OneSignalSDK.js',
       init: {
-        appId: 'c06f0427-6293-4f16-b5f3-d4a3c15ad201',
+        appId: "42c3bd8f-982a-47e8-b6ad-3e32812659e2",
+        autoRegister: false,
         allowLocalhostAsSecureOrigin: true,
         welcomeNotification: {
-            disable: true
+            disable: false
         }
       }
   },

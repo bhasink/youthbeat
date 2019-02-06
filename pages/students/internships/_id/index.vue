@@ -118,16 +118,12 @@
                             <div class="internship-card">
 
                                 <div class="signup " id="signup">
-                                    <div class="container">
+                                    <div class="container" v-bind:style="{display:formShow}">
                                         <div class="form-container">
                                             <div class="row">
                                                 <div class="col-md-12">
 
-                                                   <div class="changeDisplaySuccess"  v-bind:style="{display:changeDisplaySuccess}">
-                                                        <h1>Thankyou. We will get back to you later.</h1>
-                                                   </div>
-
-                                                    <form id="youth-form" @submit.prevent="submit" class="youth-form" v-bind:style="{display:formShow}">
+                                                    <form id="youth-form" @submit.prevent="submit" class="youth-form">
                                                         <div class="form-group">
                                                             <div class="row">
                                                                 <div class="col-md-4">
@@ -361,6 +357,10 @@
                                         </div>
 
                                     </div> <!--container ends here-->
+
+                                     <div class="changeDisplaySuccess"  v-bind:style="{display:changeDisplaySuccess}">
+                                        <h1>Thankyou. We will get back to you later.</h1>
+                                     </div>
                                 </div>
 
                             </div>
