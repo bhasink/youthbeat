@@ -47,12 +47,44 @@
                                         </div>
                                     </div>
 
+
+
                                     <div class="col-md-2 text-right">
-                                        <a href="#" class="internship-share">
+                                        <div class="dropdown">
+                                        <div class="internship-share dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
                                                 <path style="text-indent:0;text-transform:none;block-progression:tb" d="M72 9c-6.604 0-12 5.396-12 12 0 1.617.32 3.183.906 4.594L36.313 41.406C34.15 39.314 31.23 38 28 38c-6.604 0-12 5.396-12 12s5.396 12 12 12c3.253 0 6.209-1.288 8.375-3.406l24.563 15.781A11.854 11.854 0 0 0 60 79c0 6.604 5.396 12 12 12s12-5.396 12-12-5.396-12-12-12c-3.54 0-6.705 1.575-8.906 4.031L38.719 55.375a11.924 11.924 0 0 0 0-10.75l24.343-15.656C65.264 31.439 68.45 33 72 33c6.604 0 12-5.396 12-12S78.604 9 72 9zm0 4c4.442 0 8 3.558 8 8s-3.558 8-8 8a7.97 7.97 0 0 1-8-8c0-4.442 3.558-8 8-8zM28 42c4.442 0 8 3.558 8 8s-3.558 8-8 8a7.97 7.97 0 0 1-8-8c0-4.442 3.558-8 8-8zm44 29c4.442 0 8 3.558 8 8s-3.558 8-8 8a7.97 7.97 0 0 1-8-8c0-4.442 3.558-8 8-8z" overflow="visible" color="#000"/>
                                             </svg>
-                                        </a>
+                                        </div>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                           <social-sharing url="http://www.youthbeat.in/"
+                                                          :title="internship.title"
+                                                          :description="internship.category"
+                                                          :quote="internship.title"
+                                                          :hashtags="`internship,youthbeat,`+internship.category"
+                                                          twitter-user="youthbeat"
+                                                          inline-template>
+
+                                                  <div>
+                                                      <network network="facebook" class="dropdown-item">
+                                                      <svg width="7px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512"><path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"/></svg>&nbsp;&nbsp;Facebook
+                                                      </network>
+
+                                                      <network network="linkedin" class="dropdown-item">
+                                                        <svg width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.1 411"><path d="M430.1 252v159h-92.2V262.6c0-37.3-13.3-62.7-46.7-62.7-25.5 0-40.6 17.1-47.3 33.7-2.4 5.9-3.1 14.2-3.1 22.5V411h-92.2s1.2-251.3 0-277.3h92.2V173l-.6.9h.6v-.9c12.3-18.9 34.1-45.8 83.1-45.8 60.7 0 106.2 39.6 106.2 124.8zM52.2 0C20.6 0 0 20.7 0 47.9c0 26.6 20 47.9 51 47.9h.6c32.2 0 52.2-21.3 52.2-47.9C103.1 20.7 83.7 0 52.2 0zM5.5 411h92.2V133.7H5.5V411z"></path></svg>&nbsp;&nbsp;linkedin
+                                                      </network>
+
+                                                      <network network="twitter" class="dropdown-item">
+                                                        <svg width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>&nbsp;&nbsp;Twitter
+                                                      </network>
+
+                                                  </div>
+
+                                            </social-sharing>
+
+                                        </div>
+                                      </div>
                                     </div>
 
                                 </div>
