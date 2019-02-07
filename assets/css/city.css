@@ -35,7 +35,7 @@
 }
 
 .internship-card .spacing-block{
-    padding: 1.2em 0;
+    padding: .5em 0;
     display: flex;
     justify-content: space-between;
 }
@@ -49,6 +49,9 @@
     font-size: 1.1em;
     text-transform: uppercase;
     font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .internship-card span{
@@ -70,6 +73,7 @@
     align-items: center;
     vertical-align: middle;
     font-size: .8em;
+    margin: .5em 0;
 }
 
 .internship-card p{
@@ -93,13 +97,15 @@
     color: #fff;
 }
 
+
+
 @media screen and (max-width: 768px) {
     .internship-card{
         position: relative;
     }
 
     .internship-card .col-md-auto{
-        margin: 1em 0;
+        margin: .3em 0;
     }
 
     .internship-card .internship-points,
@@ -126,7 +132,17 @@
     }
 }
 
-@media screen and (max-width: 769px) {
+
+.@media screen and (max-width: 600px) {
+    .internship-card .col-md-auto{
+        margin: .3em 0;
+        display: block;
+        max-width: 100%;
+        flex: 100%;
+    }
+}
+
+    @media screen and (max-width: 769px) {
     .internship-display .col-md-6{
         max-width: 100%;
         flex: 100%;

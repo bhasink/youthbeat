@@ -1,10 +1,10 @@
 <template>
-  <div>
+    <div class="stick-footer-body">
         <!--Include header-->
         <Header/>
 
 
-        <div class="city-page">
+        <div class="city-page stick-footer">
 
             <!--------------------------------------------------------------
             Hero Section
