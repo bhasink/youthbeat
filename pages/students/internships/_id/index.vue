@@ -359,7 +359,19 @@
                                     </div> <!--container ends here-->
 
                                      <div class="changeDisplaySuccess"  v-bind:style="{display:changeDisplaySuccess}">
-                                        <h1>Thankyou. We will get back to you later.</h1>
+                                         <div class="check_mark">
+                                             <div class="sa-icon sa-success animate">
+                                                 <span class="sa-line sa-tip animateSuccessTip"></span>
+                                                 <span class="sa-line sa-long animateSuccessLong"></span>
+                                                 <div class="sa-placeholder"></div>
+                                                 <div class="sa-fix"></div>
+                                             </div>
+                                         </div>
+
+
+                                         <h1>Thank You. </h1>
+                                         <p>We will get back to you later.</p>
+
                                      </div>
                                 </div>
 
