@@ -957,6 +957,15 @@ header{
     color: #999999;
 }
 
+#youth-form textarea{
+    border-radius: 0;
+    margin: 10px 0;
+    background-color: #f6f6f6;
+    border: none;
+    padding: 1em;
+    color: #999999;
+}
+
 #youth-form select{
     border-radius: 0;
     background-color: #f6f6f6;
