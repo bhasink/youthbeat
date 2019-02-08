@@ -491,23 +491,23 @@ Why Youthbeat Section
             </div> <!--container ends here-->
 
 
-             <div class="changeDisplaySuccess"  v-bind:style="{display:changeDisplaySuccess}">
-                 <div class="internship-card">
+            <div class="changeDisplaySuccess"  v-bind:style="{display:changeDisplaySuccess}">
+                <div class="internship-card">
 
-                 <div class="check_mark">
-                     <div class="sa-icon sa-success animate">
-                         <span class="sa-line sa-tip animateSuccessTip"></span>
-                         <span class="sa-line sa-long animateSuccessLong"></span>
-                         <div class="sa-placeholder"></div>
-                         <div class="sa-fix"></div>
-                     </div>
-                 </div>
+                    <div class="check_mark">
+                        <div class="sa-icon sa-success animate">
+                            <span class="sa-line sa-tip animateSuccessTip"></span>
+                            <span class="sa-line sa-long animateSuccessLong"></span>
+                            <div class="sa-placeholder"></div>
+                            <div class="sa-fix"></div>
+                        </div>
+                    </div>
 
 
-                 <h1>Thank You. </h1>
-                 <p>We will get back to you later.</p>
-                 </div>
-             </div>
+                    <h1>Thank You. </h1>
+                    <p>We will get back to you later.</p>
+                </div>
+            </div>
 
         </section>
 
@@ -557,7 +557,7 @@ Why Youthbeat Section
                 await this.$axios.$post('/api/corporate-register',this.form)
                     .then((response)=>{
                         this.formShow = "none",
-                        this.changeDisplaySuccess = "block"
+                            this.changeDisplaySuccess = "block"
                     });
             },
         }

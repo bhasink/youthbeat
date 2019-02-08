@@ -101,7 +101,8 @@ header{
         background-size: cover;
         background-position: 100% 30%;
         background-repeat: no-repeat;
-        /*overflow-y: hidden;*/
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     .intro-text {
