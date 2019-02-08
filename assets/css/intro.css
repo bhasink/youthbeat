@@ -20,7 +20,7 @@ header{
     background-size: cover;
     background-position: 100% 30%;
     background-repeat: no-repeat;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
 }
 
 .intro-text{
@@ -101,7 +101,7 @@ header{
         background-size: cover;
         background-position: 100% 30%;
         background-repeat: no-repeat;
-        overflow-y: hidden;
+        /*overflow-y: hidden;*/
     }
 
     .intro-text {

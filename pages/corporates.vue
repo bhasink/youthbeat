@@ -492,6 +492,8 @@ Why Youthbeat Section
 
 
              <div class="changeDisplaySuccess"  v-bind:style="{display:changeDisplaySuccess}">
+                 <div class="internship-card">
+
                  <div class="check_mark">
                      <div class="sa-icon sa-success animate">
                          <span class="sa-line sa-tip animateSuccessTip"></span>
@@ -504,7 +506,7 @@ Why Youthbeat Section
 
                  <h1>Thank You. </h1>
                  <p>We will get back to you later.</p>
-
+                 </div>
              </div>
 
         </section>
