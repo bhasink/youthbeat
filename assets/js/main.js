@@ -76,6 +76,65 @@
     }
 })();
 
+//Slider for Testimonial//
+(function($) {
+    $.fn.rotateSlider = function(opt) {
+        var $this = this,
+            itemClass = opt.itemClass || 'rotateslider-item',
+            arrowClass = opt.arrowClass || 'js-rotateslider-arrow',
+            $item = $this.find('.' + itemClass),
+            $arrow = $this.find('.' + arrowClass),
+            itemCount = $item.length;
+
+
+        var defaultIndex = 0;
+
+        changeIndex(defaultIndex);
+
+        $arrow.on('click', function() {
+            var action = $(this).data('action'),
+                nowIndex = $item.index($this.find('.now'));
+            if(action == 'next') {
+                if(nowIndex == itemCount - 1) {
+                    changeIndex(0);
+                } else {
+                    changeIndex(nowIndex + 1);
+                }
+            } else if (action == 'prev') {
+                if(nowIndex == 0) {
+                    changeIndex(itemCount - 1);
+                } else {
+                    changeIndex(nowIndex - 1);
+                }
+            }
+        });
+
+        function changeIndex (nowIndex) {
+            // clern all class
+            $this.find('.now').removeClass('now');
+            $this.find('.next').removeClass('next');
+            $this.find('.prev').removeClass('prev');
+            if(nowIndex == itemCount -1){
+                $item.eq(0).addClass('next');
+            }
+            if(nowIndex == 0) {
+                $item.eq(itemCount -1).addClass('prev');
+            }
+
+            $item.each(function(index) {
+                if(index == nowIndex) {
+                    $item.eq(index).addClass('now');
+                }
+                if(index == nowIndex + 1 ) {
+                    $item.eq(index).addClass('next');
+                }
+                if(index == nowIndex - 1 ) {
+                    $item.eq(index).addClass('prev');
+                }
+            });
+        }
+    };
+})(jQuery);
 
 //Header fixed//
 $(function () {
@@ -97,24 +156,20 @@ $(function () {
 
 
 //Mega menu//
+$('.menu-toggle').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
 
-$(function(){
-    $('.menu-toggle').on('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
+    $('.mega-menu').toggleClass('open');
 
-        $('.mega-menu').toggleClass('open');
-
-        $(document).one('click', function closeMenu (e){
-            if($('.mega-menu').has(e.target).length === 0){
-                $('.mega-menu').removeClass('open');
-            } else {
-                $(document).one('click', closeMenu);
-            }
-        });
+    $(document).one('click', function closeMenu (e){
+        if($('.mega-menu').has(e.target).length === 0){
+            $('.mega-menu').removeClass('open');
+        } else {
+            $(document).one('click', closeMenu);
+        }
     });
 });
-
 
 
 //data counter//
@@ -201,96 +256,82 @@ $(function(){
 })(jQuery);
 
 
-$(function() {
-    $.fn.rotateSlider = function(opt) {
-        var $this = this,
-            itemClass = opt.itemClass || 'rotateslider-item',
-            arrowClass = opt.arrowClass || 'js-rotateslider-arrow',
-            $item = $this.find('.' + itemClass),
-            $arrow = $this.find('.' + arrowClass),
-            itemCount = $item.length;
+//Form Submit//
+
+$(function () {
+    $('.error').hide();
+    $("#youth-form").submit(function (e) {
+        e.preventDefault();
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var college = $("#college").val();
+        var city = $("#city").val();
+        var phone_number = $("#phone_number").val();
+        var mobile_number = $("#mobile_number").val();
+        var which_year = $("#which_year").val();
+        var course = $("#course").val();
+        var interest = $("#interest").val();
+        var internship_type = $("#internship_type").val();
+        var internship_field = $("#internship_field").val();
+        var role_model = $("#role_model").val();
+        var check = $("#check:checked").val();
+        var dataString = 'name='+ name + '&email=' + email + '&college=' + college + '&city=' + city + '&phone_number=' + phone_number + '&mobile_number=' + mobile_number + '&which_year=' + which_year + '&course=' + course + "&interest=" + interest + '&internship_type=' + internship_type + '&internship_field=' + internship_field + '&role_model=' + role_model;
 
 
-        var defaultIndex = 0;
 
-        changeIndex(defaultIndex);
-
-        $arrow.on('click', function() {
-            var action = $(this).data('action'),
-                nowIndex = $item.index($this.find('.now'));
-            if(action == 'next') {
-                if(nowIndex == itemCount - 1) {
-                    changeIndex(0);
-                } else {
-                    changeIndex(nowIndex + 1);
-                }
-            } else if (action == 'prev') {
-                if(nowIndex == 0) {
-                    changeIndex(itemCount - 1);
-                } else {
-                    changeIndex(nowIndex - 1);
-                }
-            }
-            alert("Works");
-
-        });
-
-        function changeIndex (nowIndex) {
-            // clern all class
-            $this.find('.now').removeClass('now');
-            $this.find('.next').removeClass('next');
-            $this.find('.prev').removeClass('prev');
-            if(nowIndex == itemCount -1){
-                $item.eq(0).addClass('next');
-            }
-            if(nowIndex == 0) {
-                $item.eq(itemCount -1).addClass('prev');
-            }
-
-            $item.each(function(index) {
-                if(index == nowIndex) {
-                    $item.eq(index).addClass('now');
-                }
-                if(index == nowIndex + 1 ) {
-                    $item.eq(index).addClass('next');
-                }
-                if(index == nowIndex - 1 ) {
-                    $item.eq(index).addClass('prev');
-                }
-            });
+        if(name === "" || email === "" || college === "" || city === "" || phone_number === "" || mobile_number === "" || which_year === "" || course === "" || interest === "" || internship_type === "" || internship_field === "" || role_model === "" || check === ""){
+            $('.error').show();
+            return false;
         }
 
-    };
+        else{
+            $('.error').hide();
+        }
 
+        $.ajax({
+            type: "POST",
+            url: 'data.php',
+            data: dataString,
+            success: function () {
+                $('#youth-form').html("<div id='message' class='text-center'></div>");
+                $('#message').html("<h2 class='text-center'>Thank you for contacting us </h2>").append("<p>We will get back to you</p>").show();
+            },
+            error: function(request, status, error){
+                alert("Error: Could not delete");
+            }
+        });
+        return false;
+    });
 });
 
-
+//
+// $(function(){
+//     $(document).ready(function () {
+//         // var rotatesliderItem =$('.rotateslider-item');
+//         let sliderCaption = $('.rotateslider-txt');
+//         sliderCaption.hide();
+//
+//             $('.caption-click').click(function () {
+//                 $(sliderCaption).next().show();
+//             });
+//
+//         console.log(sliderCaption);
+//     });
+// });
 
 
 //Removes br tag on mobile//
 
-$(function () {
-    function checkPosition() {
-        if (window.matchMedia('(max-width: 767px)').matches) {
-            $('br', ".about-text > p").remove();
-        } else {
-            //...
-        }
+function checkPosition() {
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        $('br', ".about-text > p").remove();
+    } else {
+        //...
     }
-    checkPosition();
-
-});
+}
 
 
 
-
-
-
-$(".check-button").click(function() {
-    $(".sa-success").addClass("hide");
-    setTimeout(function() {
-        $(".sa-success").removeClass("hide");
-    }, 10);
-});
+// $('.b-description_readmore_wrapper .js-description_readmore_wrapper\n').find('br').remove();
 
 
