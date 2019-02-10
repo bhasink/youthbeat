@@ -106,6 +106,8 @@
 
     .internship-card .col-md-auto{
         margin: .3em 0;
+        flex: 100%;
+        max-width: 100%;
     }
 
     .internship-card .internship-points,
