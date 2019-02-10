@@ -12,13 +12,13 @@ footer
                 <div class="col-md-12">
 
                     <div class="footer-container">
-                        <ul class="footer-nav">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#testimonial">Student speak</a></li>
-                            <li><a href="#why">Why youth beat</a></li>
-                            <li><a href="#clients">client</a></li>
-                            <li><a href="#signup">contact us</a></li>
-                        </ul>
+                        <!--<ul class="footer-nav">-->
+                            <!--<li><a href="#about">About</a></li>-->
+                            <!--<li><a href="#testimonial">Student speak</a></li>-->
+                            <!--<li><a href="#why">Why youth beat</a></li>-->
+                            <!--<li><a href="#clients">client</a></li>-->
+                            <!--<li><a href="#signup">contact us</a></li>-->
+                        <!--</ul>-->
 
                         <ul class="social-icon">
                             <li><a target="_blank" href="https://www.facebook.com/youthbeat">
