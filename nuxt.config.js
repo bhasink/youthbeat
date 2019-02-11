@@ -140,7 +140,7 @@ module.exports = {
     ** You can extend webpack config here
     */
       // publicPath: 'https://youthbeat.sgp1.cdn.digitaloceanspaces.com',
-
+      maxChunkSize: 300000,
       plugins:[
         new webpack.ProvidePlugin({
             '$':'jquery',
