@@ -84,7 +84,7 @@ module.exports = {
   */
   plugins: [
       'plugins/axios.js','plugins/mixins/validation.js','plugins/vue-moment.js',
-      {src: 'plugins/owl.js', ssr: false},
+      // {src: 'plugins/owl.js', ssr: false},
       { src: 'plugins/social-sharing.js', ssr: false }
 
   ],
@@ -98,13 +98,6 @@ module.exports = {
       '@nuxtjs/pwa',
       '@nuxtjs/axios',
       '@nuxtjs/dotenv',
-      [
-          "nuxt-imagemin",
-          {
-              optipng: { optimizationLevel: 5 },
-              gifsicle: { optimizationLevel: 2 }
-          }
-      ],
   ],
 
     // Options
@@ -129,7 +122,7 @@ module.exports = {
     baseURL: "https://phplaravel-163112-711576.cloudwaysapps.com",
       credentials : false,
       proxy: false,
-      debug: true,
+      debug: false,
       retry: {
           retries: 3
       },

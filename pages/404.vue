@@ -68,6 +68,8 @@
                         </text>
                     </g>
                 </svg>
+
+                <nuxt-link to="/">Back to home</nuxt-link>
             </div>
         </div>
     </div>
