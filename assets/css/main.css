@@ -75,7 +75,7 @@ header{
     background-color: #fff;
     color: #565a5c;
     top: 0;
-    z-index: 150;
+    z-index: 1001;
     width: 100%;
     border-bottom: 1px solid #f1f1f1;
 }
