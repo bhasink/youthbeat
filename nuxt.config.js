@@ -21,29 +21,35 @@ module.exports = {
       script: [
           {
               src:"/js/jquery.min.js",
-              type: "text/javascript"
+              type: "text/javascript",
+              async: true
           },
 
           {
               src:"/js/popper.min.js",
-              type: "text/javascript"
+              type: "text/javascript",
+              async: true
           },
           {
               src:"/js/bootstrap.min.js",
-              type: "text/javascript"
+              type: "text/javascript",
+              async: true
           },
           {
               src:"/js/owl.carousel.min.js",
-              type: "text/javascript"
+              type: "text/javascript",
+              async: true
           },
           {
               src: "/js/wow.min.js",
-              type: "text/javascript"
+              type: "text/javascript",
+              async: true
           },
 
           {
               src:"/js/main.js",
-              type: "text/javascript"
+              type: "text/javascript",
+              async: true
           },
       ],
 
