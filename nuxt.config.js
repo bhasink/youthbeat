@@ -74,11 +74,6 @@ module.exports = {
           name: 'custom',
           path: '*',
           component: resolve(__dirname, 'pages/404.vue')
-        }),
-        routes.push({
-          name: 'students-internships-id',
-          path: '/students/internships/:city/:slug/:id',
-          component: resolve(__dirname, 'pages/students/internships/_id/index.vue')
         })
 
       }

@@ -155,7 +155,7 @@
 
                                         <li v-for="(internships,index) in featured_internships" :key="index">
 
-                                          <nuxt-link class="apply-btn" :to="{name:'students-internships-id',params:{city:internships.city_id,slug:internships.slug,id:internships.id}}">
+                                          <nuxt-link class="apply-btn" :to="{name:'students-internships-city-slug-id',params:{city:internships.city_id,slug:internships.slug,id:internships.id}}">
                                                   <img :src="'https://phplaravel-163112-711576.cloudwaysapps.com/internship/images/'+internships.internship_logo" width="150" height="100" alt="">
                                           </nuxt-link>
                                         </li>

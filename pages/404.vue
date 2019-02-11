@@ -6,9 +6,9 @@
                     <style>
                         .st0{fill:#6d6e71}.st2{font-size:34.923px}.st3{letter-spacing:1}.st6{fill:#27aae1}.st10{fill:#e6e7e8}.st11{fill:#fff}.st12{fill:#414042}.st14{opacity:.1}.st15{fill:#c49a6c}
                     </style>
-                    <text transform="translate(102.427 332.099)">
+                    <!-- <text transform="translate(102.427 332.099)">
                         <tspan x="0" y="0" class="st0 st2 st3" font-family="Montserrat-ExtraLight">You have</tspan><tspan x="-36.6" y="38.6" class="st0 st2 st3" font-family="Montserrat-ExtraBold">been boxed!</tspan>
-                    </text>
+                    </text> -->
                     <path d="M401.5 278.1c0 7.1-89.8 6.2-200.5 6.2-110.8 0-200.5.9-200.5-6.2 0-7.1 89.8-12.9 200.5-12.9 110.8 0 200.5 5.7 200.5 12.9z" opacity=".1" fill="#231f20"/>
                     <path class="st6" d="M256.7 103.2c0 31.8-25.8 57.7-57.7 57.7-31.8 0-57.7-25.8-57.7-57.7 0-31.8 25.8-57.7 57.7-57.7 31.8 0 57.7 25.8 57.7 57.7z"/>
                     <path class="st6" d="M237.3 55.8c0 30.2-24.5 54.7-54.7 54.7-30.2 0-54.7-24.5-54.7-54.7 0-30.2 24.5-54.7 54.7-54.7 30.3 0 54.7 24.5 54.7 54.7z"/>

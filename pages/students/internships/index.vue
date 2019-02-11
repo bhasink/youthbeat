@@ -142,7 +142,7 @@
 
                                         <!--{{internship}}-->
 
-                                        <nuxt-link class="apply-btn" :to="{name:'students-internships-id',params:{city:internship.city_id,slug:internship.slug,id:internship.id}}">
+                                        <nuxt-link class="apply-btn" :to="{name:'students-internships-city-slug-id',params:{city:internship.city_id,slug:internship.slug,id:internship.id}}">
                                             apply Now
                                         </nuxt-link>
 
