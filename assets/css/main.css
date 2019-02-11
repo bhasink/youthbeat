@@ -98,7 +98,6 @@ header{
     /*position: fixed;*/
     top: 0;
     z-index: 150;
-    width: 100%;
     border-bottom: 1px solid #eee;
     /*height: 60px;*/
     transition: var(--transition);
