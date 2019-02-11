@@ -21,10 +21,11 @@
 
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!--<ul class="navbar-nav ml-auto ">-->
-                        <!--<li class="nav-item ">-->
-                            <!--<a class="nav-link active" href="#about">About<span class="sr-only">(current)</span></a>-->
-                        <!--</li>-->
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item ">
+                        <nuxt-link class="nav-link active" :to="{name:'students-internships',params:{id:1}}">All Internship <span class="sr-only">(current)</span>
+                                        </nuxt-link>
+                        </li>
 
                         <!--<li class="nav-item">-->
                             <!--<a class="nav-link" href="#testimonial">Student speak</a>-->
@@ -50,7 +51,7 @@
                         <!--&lt;!&ndash;</svg>&ndash;&gt;-->
                         <!--&lt;!&ndash;</a>&ndash;&gt;-->
                         <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                    <!--</ul>-->
+                    </ul>
                 </div>
 
                 <!--<div class="visible-xs visible-sm hidden-md hidden-lg">-->
@@ -60,10 +61,13 @@
                     </a>
                     <div class="row">
                         <div class="col-md-12">
-                            <!--<ul>-->
-                                <!--<li class="nav-item ">-->
-                                    <!--<a class="nav-link active" href="#about">About<span class="sr-only">(current)</span></a>-->
-                                <!--</li>-->
+                            <ul>
+
+
+                                 <li class="nav-item ">
+                                        <nuxt-link class="nav-link active" :to="{name:'students-internships',params:{id:1}}">All Internship <span class="sr-only">(current)</span>
+                                        </nuxt-link>
+                                  </li>
 
                                 <!--<li class="nav-item">-->
                                     <!--<a class="nav-link" href="#testimonial">Student speak</a>-->
@@ -89,7 +93,7 @@
                                 <!--&lt;!&ndash;</svg>&ndash;&gt;-->
                                 <!--&lt;!&ndash;</a>&ndash;&gt;-->
                                 <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                            <!--</ul>-->
+                            </ul>
 
                         </div>
                     </div>
