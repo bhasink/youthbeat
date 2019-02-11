@@ -57,3 +57,25 @@ footer
     </div>
 
 </template>
+
+<script>
+export default {
+  mounted(){
+
+        $('.menu-toggle').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        $('.mega-menu').toggleClass('open');
+
+        $(document).one('click', function closeMenu (e){
+            if($('.mega-menu').has(e.target).length === 0){
+                $('.mega-menu').removeClass('open');
+            } else {
+                $(document).one('click', closeMenu);
+            }
+        });
+    });
+  }
+}
+</script>
