@@ -64,7 +64,7 @@ module.exports = {
   ** Global CSS
   */
 
-    css: ["@/assets/css/animate.css","@/assets/css/owl.theme.default.min.css","@/assets/css/bootstrap.min.css", "@/assets/css/bootstrap-theme.min.css", "@/assets/css/animate.css","@/assets/css/font-awesome.css","@/assets/css/main.css",
+    css: ["@/assets/css/animate.css","@/assets/css/owl.theme.default.min.css","@/assets/css/bootstrap.min.css", "@/assets/css/bootstrap-theme.min.css", "@/assets/css/animate.css","@/assets/css/font-awesome.css","@/assets/css/main.css","@/assets/css/animate.css"
 
   ],
 
@@ -91,8 +91,9 @@ module.exports = {
   */
   plugins: [
       'plugins/axios.js','plugins/mixins/validation.js','plugins/vue-moment.js',
-      // {src: 'plugins/owl.js', ssr: false},
-      { src: 'plugins/social-sharing.js', ssr: false }
+      {src: 'plugins/owl.js', ssr: false},
+      { src: 'plugins/social-sharing.js', ssr: false },
+      { src: 'plugins/wow.js', ssr: false }
 
   ],
 

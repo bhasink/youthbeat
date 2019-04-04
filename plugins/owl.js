@@ -1,7 +1,5 @@
 
 import Vue from 'vue'
-import Carousel3d from 'vue-carousel-3d';
+import OwlCarousel from 'v-owl-carousel'
 
-
-Vue.use(Carousel3d);
-
+Vue.component('carousel', OwlCarousel)
