@@ -656,6 +656,7 @@ header{
     align-items: center;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     border-radius: 3px;
+    margin: 0 .2em;
 }
 
 .featured-slider figure img{
@@ -750,10 +751,13 @@ header{
 
     .featured-internship .why-youthbeat {
         display: block;
+        padding: 3px;
     }
 
     .featured-internship .why-youthbeat li {
         padding: 1em;
+        min-width: 100%;
+        margin: 0 .4em;
     }
 
     .statistics {

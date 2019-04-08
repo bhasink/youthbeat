@@ -8,7 +8,7 @@
         <!--------------------------------------------------------------
         Hero Section
         ---------------------------------------------------------------->
-        <div class="hidden-xs hidden-md visible-md -visible-lg">
+        <div class="hidden-xs hidden-sm  visible-md visible-lg">
             <section class="hero-section" id="hero-section">
                 <div class="container">
                     <div class="row">
@@ -52,14 +52,12 @@
 
                 <button>Register now</button>
             </div>
-
         </div>
 
 
         <!--------------------------------------------------------------
         Internship Location
         ---------------------------------------------------------------->
-
         <section class="internship-location">
             <div class="container">
                 <div class="row">
@@ -73,7 +71,7 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <carousel class="location-internship"  :items="4" :nav="false" :dots="true" :responsive="{0:{items:1,nav:false, stagePadding:50},600:{items:1,nav:false, stagePadding:50}}">
+                        <carousel class="location-internship"  :responsive="{0:{items:1,nav:false, stagePadding:50},1000:{items:4,nav:false, stagePadding:50}}">
                             <div class="item">
                                 <nuxt-link class="apply-btn" :to="{name:'students-internships-city',params:{city:'mumbai'}}">
                                     <figure class="wow fadeIn" data-wow-delay="0.2s" >
@@ -256,7 +254,7 @@ Featured Internships
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <carousel class="featured-slider" :items="4" :nav="false" :dots="false" :responsive="{0:{items:1,nav:false},600:{items:1,nav:false}}">
+                            <carousel class="featured-slider" :responsive="{0:{items:1,nav:false, stagePadding:50},1000:{items:4,nav:false, stagePadding:50}}">
                                 <div class="item">
                                     <figure class="wow fadeIn" data-wow-delay="0.2s" >
                                         <img src="~assets/img/featured-internship/panasonic.png" alt="">
@@ -381,7 +379,7 @@ Featured Internships
                             </div>
 
                             <div class="visible-xs visible-sm hidden-md hidden-lg">
-                                <carousel class="why-youthbeat-slider" :items="4" :nav="false" :dots="false" :responsive="{0:{items:1,nav:false, stagePadding:50},600:{items:1,nav:false, stagePadding:50}}">
+                                <carousel class="why-youthbeat-slider" :responsive="{0:{items:1,nav:false, stagePadding:50},1000:{items:4,nav:false, stagePadding:50}}">
                                     <div class="item">
                                         <ul class="why-youthbeat">
                                             <li  class="wow fadeIn" data-wow-delay="0.2s" >
