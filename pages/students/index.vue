@@ -824,6 +824,13 @@ Signup
     import Footer from '@/components/Footer'
 
     export default{
+        head() {
+            return {
+                link: [
+                    { type: 'text/css', rel: 'stylesheet', href: '/css/main.css' },
+                ],
+            };
+        },
         data(){
             return{
                 featured_internships:[],
@@ -868,3 +875,4 @@ Signup
     }
 
 </script>
+

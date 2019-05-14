@@ -64,9 +64,9 @@ module.exports = {
   ** Global CSS
   */
 
-    css: ["@/assets/css/animate.css","@/assets/css/owl.theme.default.min.css","@/assets/css/bootstrap.min.css", "@/assets/css/bootstrap-theme.min.css", "@/assets/css/animate.css","@/assets/css/font-awesome.css","@/assets/css/main.css","@/assets/css/animate.css"
+    css: ["@/assets/css/animate.css","@/assets/css/owl.theme.default.min.css","@/assets/css/bootstrap.min.css", "@/assets/css/bootstrap-theme.min.css", "@/assets/css/animate.css","@/assets/css/font-awesome.css",
 
-  ],
+    ],
 
     router:{
       middleware:["clearValidationErrors"],
@@ -149,6 +149,9 @@ module.exports = {
     */
       // publicPath: 'https://youthbeat.sgp1.cdn.digitaloceanspaces.com',
       maxChunkSize: 300000,
+      splitChunks: {
+          layouts: true
+      },
       plugins:[
         new webpack.ProvidePlugin({
             '$':'jquery',

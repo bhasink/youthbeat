@@ -195,6 +195,13 @@
     import Pagination from '@/components/Pagination'
 
     export default{
+        head() {
+            return {
+                link: [
+                    { type: 'text/css', rel: 'stylesheet', href: '/css/main.css' },
+                ],
+            };
+        },
         data(){
             return{
                 internships:[],

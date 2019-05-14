@@ -1,0 +1,135 @@
+
+
+body{
+    overflow-x: hidden;
+    padding-top: 0;
+}
+
+@font-face {
+    src: url("/fonts/Montserrat-Black.ttf");
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+header{
+    background-image: linear-gradient(to left, transparent 50%, var(--yellow-color) 50%), linear-gradient(rgba(0, 56, 131, 0.8), rgba(0, 56, 131, 0.8)), url(/img/intro/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: 100% 30%;
+    background-repeat: no-repeat;
+    /*overflow-y: hidden;*/
+}
+
+.intro-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 16px);
+    flex-direction: column;
+    padding: 1em;
+}
+
+.intro-text h1{
+    font-size: 8em;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--blue-color);
+    display: inline-flex;
+    margin-left: -90px;
+    margin-top: .5em;
+}
+
+.intro-text h1 span:nth-of-type(2){
+    color: var(--yellow-color);
+}
+
+.intro-text p{
+    padding: 0 10em;
+    text-align: center;
+    color: #1f1f1f;
+    line-height: 2em;
+    word-spacing: 3px;
+}
+
+.intro-text a{
+    padding: .8em 2em;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 180px;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.students{
+    color: #1f1f1f;
+    border: 2px solid #1f1f1f;
+}
+
+.corporates{
+    color: var(--yellow-color);
+    border: 2px solid var(--yellow-color);
+}
+
+.corporates-section p{
+    color: #fff;
+}
+
+.intro-text .students:hover{
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+.intro-text .corporates:hover{
+    text-decoration: none;
+    color: var(--yellow-color);
+}
+
+
+@media screen and (max-width: 768px) {
+    header{
+        background-image:  linear-gradient(rgba(0, 56, 131, 0.8), rgba(0, 56, 131, 0.8)), url(/img/intro/hero.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: 100% 30%;
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .intro-text {
+        padding: 5em 0;
+    }
+
+    .intro-text h1{
+        color: var(--yellow-color);
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .intro-text h1 span:nth-of-type(2) {
+        color: #fff;
+    }
+    .intro-text p {
+        padding: 1em;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .intro-text a{
+        border: 1px solid var(--yellow-color);
+        color: var(--yellow-color);
+    }
+
+    .corporates-section p{
+        margin-top: 4em;
+    }
+}

@@ -9,8 +9,8 @@
         <nav class="navbar navbar-expand-lg  main-nav " id="main-nav">
             <div class="container">
             <span>
-                <a href="" class="logo-wrapper">
-                    <img src="img/logo.png"  class="logo" alt="">
+                <a href="/students" class="logo-wrapper">
+                    <img src="/img/logo.png"  class="logo" alt="">
                 </a>
             </span>
 
