@@ -702,7 +702,7 @@ Signup
                                         <div class="col-md-4">
                                             <div class="input-field">
                                                 <label for="y-year">City <span>
-                                                    <img width="15px" src="img/angle-down.svg" alt=""></span>
+                                                    <img width="15px" src="~assets/img/angle-down.svg" alt=""></span>
                                                 </label>
                                                 <select id="w-year" v-model.trim="form.year" class="form-control">
                                                     <option value="">Which year are you in</option>
@@ -717,7 +717,7 @@ Signup
 
                                         <div class="col-md-4">
                                             <div class="input-field">
-                                                <label for="city">City <span><img width="15px" src="img/angle-down.svg" alt=""></span></label>
+                                                <label for="city">City <span><img width="15px" src="~assets/img/angle-down.svg" alt=""></span></label>
                                                 <select id="city" v-model.trim="form.city" class="form-control">
                                                     <option value="">Select City</option>
                                                     <option value="Andhra Pradesh">Andhra Pradesh</option>
