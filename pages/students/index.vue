@@ -253,31 +253,18 @@ Featured Internships
                 <div class="container">
 
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12" v-if="featured_internships.length != 0">
+
                             <carousel class="featured-slider" :responsive="{0:{items:1,nav:false, stagePadding:50},1000:{items:4,nav:false, stagePadding:50}}">
-                                <div class="item">
+                                <div class="item" v-for="(internships,index) in featured_internships" :key="index">
+                                    <nuxt-link class="apply-btn" :to="{name:'students-internships-city-slug-id',params:{city:internships.city_id,slug:internships.slug,id:internships.id}}">
                                     <figure class="wow fadeIn" data-wow-delay="0.2s" >
                                         <img src="~assets/img/featured-internship/panasonic.png" alt="">
                                     </figure>
+
+                                    </nuxt-link>
                                 </div>
 
-                                <div class="item">
-                                    <figure class="wow fadeIn" data-wow-delay="0.5s" >
-                                        <img src="img/featured-internship/adda.png" alt="">
-                                    </figure>
-                                </div>
-
-                                <div class="item">
-                                    <figure class="wow fadeIn" data-wow-delay="0.8s" >
-                                        <img src="img/featured-internship/dineout.png" alt="">
-                                    </figure>
-                                </div>
-
-                                <div class="item">
-                                    <figure class="wow fadeIn" data-wow-delay="1.1s" >
-                                        <img src="img/featured-internship/kailash-satyarthi.png" alt="">
-                                    </figure>
-                                </div>
                             </carousel>
                         </div>
                     </div>
@@ -797,6 +784,27 @@ Signup
                 </div>
 
             </div> <!--container ends here-->
+
+            <div class="changeDisplaySuccess"  v-bind:style="{display:changeDisplaySuccess}">
+                <div class="internship-card">
+
+                    <div class="check_mark">
+                        <div class="sa-icon sa-success animate">
+                            <span class="sa-line sa-tip animateSuccessTip"></span>
+                            <span class="sa-line sa-long animateSuccessLong"></span>
+                            <div class="sa-placeholder"></div>
+                            <div class="sa-fix"></div>
+                        </div>
+                    </div>
+
+
+                    <h1>Thank You. </h1>
+                    <p>We will get back to you later.</p>
+                </div>
+            </div>
+
+
+
         </section>
 
 

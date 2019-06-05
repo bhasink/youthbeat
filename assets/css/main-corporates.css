@@ -34,14 +34,23 @@ body{
 
 .youth-btn{
     background-color: #fff;
-    border: none;
-    border-radius: 30px;
+    border: 1px solid #000000 !important;
+    border-radius: 30px !important;
     width: 160px;
     height: 50px;
     text-transform: uppercase;
-    font-size: .9em;
+    font-size: .9em !important;
     margin: 20px 0;
-    cursor: pointer;
+    cursor: pointer !important;
+
+}
+
+.changeDisplaySuccess{
+    display: none;
+    min-height: 15em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .title{
@@ -65,7 +74,7 @@ header{
 
 .main-nav{
     transition: var(--transition);
-    position: fixed;
+    position: fixed !important;
     height: 80px;
     line-height: 80px;
     background-color: #fff;
@@ -111,7 +120,7 @@ header{
 }
 
 .logo-wrapper{
-    background-color: var(--gray-color);
+    background-color: #414042;
     padding: 2.5em 1em;
     display: flex;
     justify-content: center;
@@ -382,7 +391,7 @@ header{
 
 .about{
     padding: 2em;
-    background: linear-gradient(to right, #fff 60%, var(--gray-color) 40% );
+    background: linear-gradient(to right, #fff 60%, #414042 40% );
     color: #fff;
     text-align: left;
     display: flex;
@@ -420,7 +429,7 @@ header{
     font-size: 1.2em;
     font-weight: 300;
     line-height: 1.9em;
-    color: #dadada;
+    color: #dadada !important;
 }
 
 .about .location-internship{
@@ -1059,9 +1068,9 @@ select:invalid{
 /*border-bottom: 5px solid #00ff6a;*/
 /*}*/
 
-form:invalid{
-    border-bottom: 5px solid #ff0018;
-}
+/*form:invalid{*/
+/*border-bottom: 5px solid #ff0018;*/
+/*}*/
 
 /* ==========================================================================
    Footer Section
