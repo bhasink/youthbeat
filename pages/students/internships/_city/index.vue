@@ -156,7 +156,8 @@
 
 
                      <div class="no-data" v-if="internships.length == 0">
-                          No Internship Found!
+                         <h4> No Internship Found!</h4>
+                         <nuxt-link class="bt-data" to="/students">Back to Home</nuxt-link>
                     </div>
 
 

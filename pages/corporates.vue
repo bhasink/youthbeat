@@ -32,18 +32,6 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#testimonial">Student speak</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#why" aria-expanded="false">Why YouthBeat</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#clients">Client</a>
-                        </li>
-
-                        <li class="nav-item">
                             <a class="nav-link" href="#signup">Contact</a>
                         </li>
 
@@ -269,7 +257,7 @@
                         </li>
 
                         <li>
-                            <a href="">Register</a>
+                            <a href="#signup">Register</a>
                         </li>
 
                     </ul>
@@ -627,9 +615,6 @@
                         <div class="footer-container">
                             <ul class="footer-nav">
                                 <li><a href="#about">About</a></li>
-                                <li><a href="#testimonial">Student speak</a></li>
-                                <li><a href="#why">Why youth beat</a></li>
-                                <li><a href="#clients">client</a></li>
                                 <li><a href="#signup">contact us</a></li>
                             </ul>
 

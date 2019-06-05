@@ -455,7 +455,7 @@ header{
     font-size: 1.5em;
 }
 
-.hero-text button{
+.hero-text a{
     background-color: #f5c634;
     border: none;
     padding: 1em 2em;
@@ -468,7 +468,10 @@ header{
     bottom: -25px;
     cursor: pointer;
 }
-
+.hero-text a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -1178,3 +1181,29 @@ footer .social-icon li a{
 }
 
 
+.no-data{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+
+
+.bt-data{
+    background-color: #f5c634;
+    border: none;
+    padding: 1em 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .9em;
+    position: absolute;
+    bottom: 70px;
+    cursor: pointer;
+}
+
+.bt-data:hover{
+    text-decoration: none;
+    color: #ffffff;
+}

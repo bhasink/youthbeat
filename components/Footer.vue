@@ -13,10 +13,11 @@ footer
 
                         <div class="footer-container">
                             <ul class="footer-nav">
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#testimonial">Student speak</a></li>
+                                <li>
+                                    <nuxt-link :to="{name:'students-internships'}">All Internships</nuxt-link>
+                                </li>
+                                <li><a href="#testimonials">Student speak</a></li>
                                 <li><a href="#why">Why youth beat</a></li>
-                                <li><a href="#clients">client</a></li>
                                 <li><a href="#signup">contact us</a></li>
                             </ul>
 

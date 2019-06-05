@@ -21,7 +21,7 @@
                                     <span class="wow fadeIn" data-wow-delay="0.7s">your college experience</span>
                                 </h1>
 
-                                <button>Register now</button>
+                                <a href="#signup">Register now</a>
                             </div>
                         </div>
                     </div>
@@ -259,7 +259,7 @@ Featured Internships
                                 <div class="item" v-for="(internships,index) in featured_internships" :key="index">
                                     <nuxt-link class="apply-btn" :to="{name:'students-internships-city-slug-id',params:{city:internships.city_id,slug:internships.slug,id:internships.id}}">
                                     <figure class="wow fadeIn" data-wow-delay="0.2s" >
-                                        <img src="~assets/img/featured-internship/panasonic.png" alt="">
+                                        <img :src="'https://phplaravel-163112-711576.cloudwaysapps.com/internship/images/'+internships.internship_logo" width="150" height="100" alt="">
                                     </figure>
 
                                     </nuxt-link>
@@ -269,7 +269,7 @@ Featured Internships
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row" id="why">
                         <div class="col-lg-12">
                             <h2 class="title">Why Youthbeat</h2>
 
@@ -564,7 +564,7 @@ Featured Internships
         <!--------------------------------------------------------------
        Testimonials
        ---------------------------------------------------------------->
-        <section class="testimonials">
+        <section class="testimonials" id="testimonials">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">

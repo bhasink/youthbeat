@@ -41,23 +41,20 @@
                         <div class="col-md-12">
                             <ul>
                                 <li class="nav-item " >
-                                    <a class="nav-link active"  href="#about">About<span class="sr-only">(current)</span></a>
+
+                                    <nuxt-link class="nav-link active" :to="{name:'students-internships'}">All Internships</nuxt-link>
                                 </li>
 
                                 <li class="nav-item " >
-                                    <a class="nav-link "  href="#testimonial">Student speak</a>
+                                    <a href="#why">Why youth beat</a>
                                 </li>
 
-                                <li class="nav-item ">
-                                    <a class="nav-link "  href="#why" aria-expanded="false">Why YouthBeat</a>
+                                <li class="nav-item " >
+                                    <a href="#testimonials">Student speak</a>
                                 </li>
 
-                                <li class="nav-item ">
-                                    <a class="nav-link " href="#clients">Client</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link "  href="#signup">Contact</a>
+                                <li class="nav-item " >
+                                    <a href="#signup">Contact Us</a>
                                 </li>
 
                             </ul>
