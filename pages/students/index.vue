@@ -50,7 +50,7 @@
                     <span class="wow fadeIn" data-wow-delay="0.7s">your college experience</span>
                 </h1>
 
-                <button>Register now</button>
+                <a href="#signup">Register now</a>
             </div>
         </div>
 
