@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 768px) {
     .hero-section {
-        background-image: linear-gradient(to left, transparent 50%, #fbd54a 50%), linear-gradient(rgba(0, 56, 131, 0.7), rgba(0, 56, 131, 0.7019607843137254)), url(/img/corporates/hero.jpg);
+        background-image: linear-gradient(to left, transparent 100%, #fbd54a 50%), linear-gradient(rgba(0, 56, 131, 0.7), rgba(0, 56, 131, 0.7019607843137254)), url(/img/corporates/hero.jpg);
     }
 
     .hero-text h1 {
