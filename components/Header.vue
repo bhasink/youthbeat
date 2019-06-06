@@ -45,17 +45,17 @@
                                     <nuxt-link class="nav-link active" :to="{name:'students-internships'}">All Internships</nuxt-link>
                                 </li>
 
-                                <li class="nav-item " >
-                                    <a href="#why">Why youth beat</a>
-                                </li>
+                                <!--<li class="nav-item " >-->
+                                    <!--<a href="#why">Why youth beat</a>-->
+                                <!--</li>-->
 
-                                <li class="nav-item " >
-                                    <a href="#testimonials">Student speak</a>
-                                </li>
+                                <!--<li class="nav-item " >-->
+                                    <!--<a href="#testimonials">Student speak</a>-->
+                                <!--</li>-->
 
-                                <li class="nav-item " >
-                                    <a href="#signup">Contact Us</a>
-                                </li>
+                                <!--<li class="nav-item " >-->
+                                    <!--<a href="#signup">Contact Us</a>-->
+                                <!--</li>-->
 
                             </ul>
 

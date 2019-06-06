@@ -228,7 +228,7 @@
                             as a campus ambassador for your college.
                         </p>
 
-                        <a href="#" class="youth-btn">Read More</a>
+                        <!--<a href="#" class="youth-btn">Read More</a>-->
 
                     </div>
                 </div>
