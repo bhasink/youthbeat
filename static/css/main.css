@@ -1236,3 +1236,7 @@ footer .social-icon li a{
     text-decoration: none;
     color: #ffffff;
 }
+
+.form-control {
+    margin: 5px;
+}
