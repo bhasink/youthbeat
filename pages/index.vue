@@ -11,7 +11,8 @@
           <!--<div class="col-md-12">-->
             <span>
               <a href="" class="logo-wrapper">
-                <img src="~/assets/img/logo.png"  class="logo" alt="">
+                <!--<img src="~/assets/img/logo.png"  class="logo" alt="">-->
+                 <img src="/img/YB Black bg.png"  class="logo" alt="" >
               </a>
             </span>
 
