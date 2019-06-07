@@ -10,7 +10,7 @@
             <div class="container">
             <span>
                 <a href="/students" class="logo-wrapper">
-                    <img src="/img/logo.png"  class="logo" alt="">
+                    <img src="/img/YB White bg.png"  class="logo" alt="" style="height: 120px;width: 120px;">
                 </a>
             </span>
 

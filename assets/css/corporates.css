@@ -1,4 +1,18 @@
 
+
+body{
+    font-family: 'Montserrat', sans-serif !important;
+    color: #666666 !important;
+    overflow-x: hidden;
+    padding-top: 80px;
+    /*-moz-osx-font-smoothing: grayscale;*/
+    /*-webkit-font-smoothing: antialiased;*/
+    /*font-smoothing: antialiased;*/
+    /*text-rendering: optimizeLegibility;*/
+}
+
+
+
 /* ==========================================================================
    Hero Section Corporates
    ========================================================================== */

@@ -3,6 +3,7 @@
 body{
     overflow-x: hidden;
     padding-top: 0;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 @font-face {
@@ -50,7 +51,7 @@ header{
     padding: 0 10em;
     text-align: center;
     color: #1f1f1f;
-    line-height: 2em;
+    /*line-height: 1em;*/
     word-spacing: 3px;
 }
 
