@@ -19,7 +19,7 @@
     "bootstrap-vue": "^2.0.0-beta",
     "cross-env": "^5.2.0",
     "jquery": "^3.3.1",
-    "moment-timezone": "^0.5.23",
+    "moment-timezone": "^0.5.35",
     "nuxt": "^2.0.0",
     "popper.js": "^1.14.6",
     "v-owl-carousel": "^1.0.8",
